@@ -17,7 +17,7 @@ import { useCompareAddItem } from '~/store/compare/compareHooks';
 import { useQuickviewOpen } from '~/store/quickview/quickviewHooks';
 import { useWishlistAddItem } from '~/store/wishlist/wishlistHooks';
 import {
-    Cart20Svg,
+    Plus242Svg,
     Compare16Svg,
     Quickview16Svg,
     Wishlist16Svg,
@@ -204,7 +204,7 @@ function ProductCard(props: Props) {
                                     aria-label={intl.formatMessage({ id: 'BUTTON_ADD_TO_CART' })}
                                     onClick={run}
                                 >
-                                    <Cart20Svg />
+                                    <Plus242Svg />
                                 </button>
                             )}
                         />

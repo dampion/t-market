@@ -16,7 +16,7 @@ import { useMobileMenuOpen } from '~/store/mobile-menu/mobileMenuHooks';
 import { useWishlist } from '~/store/wishlist/wishlistHooks';
 import {
     Car20Svg,
-    Cart20Svg,
+    Plus242Svg,
     Cross20Svg,
     Heart20Svg,
     Menu18x14Svg,
@@ -181,7 +181,7 @@ function MobileHeader() {
                         <div className="mobile-indicator">
                             <AppLink href={url.cart()} className="mobile-indicator__button">
                                 <span className="mobile-indicator__icon">
-                                    <Cart20Svg />
+                                    <Plus242Svg />
                                     {cart.quantity > 0 && (
                                         <span className="mobile-indicator__counter">
                                             {cart.quantity}

@@ -36,7 +36,7 @@ function BlockFinder() {
             <Decor className="block-finder__decor" type="bottom" />
             <div
                 className="block-finder__image"
-                style={{ backgroundImage: `url(${baseUrl('https://red-parts.react.themeforest.scompiler.ru/themes/red/images/finder.jpeg')})` }}
+                style={{ backgroundImage: `url(${baseUrl('/images/finder.jpeg')})` }}
             />
             <div className="block-finder__body container container--max--xl">
                 <div className="block-finder__title">

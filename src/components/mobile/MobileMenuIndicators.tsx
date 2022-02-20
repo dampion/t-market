@@ -10,7 +10,7 @@ import { useCart } from '~/store/cart/cartHooks';
 import { useMobileMenuClose } from '~/store/mobile-menu/mobileMenuHooks';
 import {
     Car20Svg,
-    Cart20Svg,
+    Plus242Svg,
     Heart20Svg,
     Person20Svg,
 } from '~/svg';
@@ -45,7 +45,7 @@ function MobileMenuIndicators() {
             </AppLink>
             <AppLink href={url.cart()} className="mobile-menu__indicator" onClick={mobileMenuClose}>
                 <span className="mobile-menu__indicator-icon">
-                    <Cart20Svg />
+                    <Plus242Svg />
                     {cart.items.length > 0 && (
                         <span className="mobile-menu__indicator-counter">
                             {cart.items.length}
