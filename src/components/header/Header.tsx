@@ -3,7 +3,7 @@ import React, { useMemo, useRef } from 'react';
 // third-party
 import { FormattedMessage } from 'react-intl';
 // application
-import AccountMenu from '~/components/header/AccountMenu';
+// import AccountMenu from '~/components/header/AccountMenu';
 import AppLink from '~/components/shared/AppLink';
 import CurrencyFormat from '~/components/shared/CurrencyFormat';
 import Departments from '~/components/header/Departments';
@@ -14,7 +14,8 @@ import MainMenu from '~/components/header/MainMenu';
 import Search from '~/components/header/Search';
 import Topbar from '~/components/header/Topbar';
 import url from '~/services/url';
-import { Heart32Svg, Person32Svg, Cart32Svg } from '~/svg';
+// import { Heart32Svg, Person32Svg, Cart32Svg } from '~/svg';
+import { Heart32Svg, Cart32Svg } from '~/svg';
 import { useCart } from '~/store/cart/cartHooks';
 import { useOptions } from '~/store/options/optionsHooks';
 import { useUser } from '~/store/user/userHooks';
@@ -32,9 +33,9 @@ function Header() {
             : <FormattedMessage id="BUTTON_DEPARTMENTS_LONG" />
     ), [desktopLayout]);
 
-    const accountIndicatorLabel = user ? user.email : <FormattedMessage id="TEXT_INDICATOR_ACCOUNT_LABEL" />;
-    const accountIndicatorValue = <FormattedMessage id="TEXT_INDICATOR_ACCOUNT_VALUE" />;
-    const accountIndicatorCtrl = useRef<IIndicatorController | null>(null);
+    // const accountIndicatorLabel = user ? user.email : <FormattedMessage id="TEXT_INDICATOR_ACCOUNT_LABEL" />;
+    // const accountIndicatorValue = <FormattedMessage id="TEXT_INDICATOR_ACCOUNT_VALUE" />;
+    // const accountIndicatorCtrl = useRef<IIndicatorController | null>(null);
 
     const cart = useCart();
     const cartIndicatorLabel = <FormattedMessage id="TEXT_INDICATOR_CART_LABEL" />;

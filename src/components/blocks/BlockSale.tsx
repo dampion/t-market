@@ -3,14 +3,14 @@ import React, { useRef } from 'react';
 // third-party
 import classNames from 'classnames';
 import Slick from 'react-slick';
-import { FormattedMessage } from 'react-intl';
+// import { FormattedMessage } from 'react-intl';
 // application
-import AppLink from '~/components/shared/AppLink';
+// import AppLink from '~/components/shared/AppLink';
 import AppSlick, { ISlickProps } from '~/components/shared/AppSlick';
-import Arrow from '~/components/shared/Arrow';
+// import Arrow from '~/components/shared/Arrow';
 import Decor from '~/components/shared/Decor';
 import ProductCard from '~/components/shared/ProductCard';
-import Timer from '~/components/shared/Timer';
+// import Timer from '~/components/shared/Timer';
 import { baseUrl } from '~/services/utils';
 import { IProduct } from '~/interfaces/product';
 
@@ -38,17 +38,17 @@ function BlockSale(props: Props) {
     const { products, loading = false } = props;
     const slickRef = useRef<Slick>(null);
 
-    const handleNextClick = () => {
-        if (slickRef.current) {
-            slickRef.current.slickNext();
-        }
-    };
+    // const handleNextClick = () => {
+    //     if (slickRef.current) {
+    //         slickRef.current.slickNext();
+    //     }
+    // };
 
-    const handlePrevClick = () => {
-        if (slickRef.current) {
-            slickRef.current.slickPrev();
-        }
-    };
+    // const handlePrevClick = () => {
+    //     if (slickRef.current) {
+    //         slickRef.current.slickPrev();
+    //     }
+    // };
 
     const rootClasses = classNames('block', 'block-sale', { 'block-sale--loading': loading });
 
