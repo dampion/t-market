@@ -123,15 +123,15 @@ function Page() {
                     <th className="cart-table__column cart-table__column--product">
                         <FormattedMessage id="TABLE_PRODUCT" />
                     </th>
-                    <th className="cart-table__column cart-table__column--price">
+                    {/* <th className="cart-table__column cart-table__column--price">
                         <FormattedMessage id="TABLE_PRICE" />
-                    </th>
+                    </th> */}
                     <th className="cart-table__column cart-table__column--quantity">
                         <FormattedMessage id="TABLE_QUANTITY" />
                     </th>
-                    <th className="cart-table__column cart-table__column--total">
+                    {/* <th className="cart-table__column cart-table__column--total">
                         <FormattedMessage id="TABLE_TOTAL" />
-                    </th>
+                    </th> */}
                     <th className="cart-table__column cart-table__column--remove">
                         <span className="sr-only">
                             <FormattedMessage id="TABLE_REMOVE" />
@@ -166,12 +166,12 @@ function Page() {
                                 </ul>
                             )}
                         </td>
-                        <td
+                        {/* <td
                             className="cart-table__column cart-table__column--price"
                             data-title={intl.formatMessage({ id: 'TABLE_PRICE' })}
                         >
                             <CurrencyFormat value={item.price} />
-                        </td>
+                        </td> */}
                         <td
                             className="cart-table__column cart-table__column--quantity"
                             data-title={intl.formatMessage({ id: 'TABLE_QUANTITY' })}
@@ -183,12 +183,12 @@ function Page() {
                                 onChange={(quantity) => handleChangeQuantity(item, quantity)}
                             />
                         </td>
-                        <td
+                        {/* <td
                             className="cart-table__column cart-table__column--total"
                             data-title={intl.formatMessage({ id: 'TABLE_TOTAL' })}
                         >
                             <CurrencyFormat value={item.total} />
-                        </td>
+                        </td> */}
                         <td className="cart-table__column cart-table__column--remove">
                             <AsyncAction
                                 action={() => cartRemoveItem(item.id)}

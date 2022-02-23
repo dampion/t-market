@@ -55,7 +55,7 @@ function BlockSale(props: Props) {
     return (
         <div className={rootClasses}>
             <div className="block-sale__content">
-                <div className="block-sale__header">
+                {/* <div className="block-sale__header">
                     <div className="block-sale__title">
                         <FormattedMessage id="HEADER_DEAL_ZONE_TITLE" />
                     </div>
@@ -83,7 +83,7 @@ function BlockSale(props: Props) {
                         />
                         <Decor type="center" className="block-sale__header-decor" />
                     </div>
-                </div>
+                </div> */}
                 <div className="block-sale__body">
                     <Decor type="bottom" className="block-sale__body-decor" />
                     <div

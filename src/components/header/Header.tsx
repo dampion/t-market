@@ -93,7 +93,7 @@ function Header() {
                     counter={wishlist.items.length}
                 />
 
-                <Indicator
+                {/* <Indicator
                     href={url.accountDashboard()}
                     icon={<Person32Svg />}
                     label={accountIndicatorLabel}
@@ -102,7 +102,7 @@ function Header() {
                     controllerRef={accountIndicatorCtrl}
                 >
                     <AccountMenu onCloseMenu={() => accountIndicatorCtrl.current?.close()} />
-                </Indicator>
+                </Indicator> */}
 
                 <Indicator
                     href={url.cart()}

@@ -136,20 +136,20 @@ function Page() {
                 links={newArrivalsLinks}
             />
             <BlockSpace layout="divider-nl" />
-            <BlockPosts
+            {/* <BlockPosts
                 blockTitle={intl.formatMessage({ id: 'HEADER_LATEST_NEWS' })}
                 layout="grid"
                 loading={latestPosts.isLoading}
                 posts={latestPosts.data}
                 links={latestPostsLinks}
-            />
+            /> */}
             <BlockSpace layout="divider-nl" />
             <BlockBrands
                 layout="columns-8-full"
                 brands={brands.data}
             />
             <BlockSpace layout="divider-nl" className="d-xl-block d-none" />
-            <BlockProductsColumns columns={columns} />
+            {/* <BlockProductsColumns columns={columns} /> */}
             <BlockSpace layout="before-footer" />
         </React.Fragment>
     );

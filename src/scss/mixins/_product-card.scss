@@ -348,7 +348,8 @@
         padding: 6px $local-padding;
     }
     .product-card__name {
-        padding: 0 $local-padding;
+        // padding: 0 $local-padding;
+        padding: $local-padding;
         line-height: 1.1875;
     }
     .product-card__rating {

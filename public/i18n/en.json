@@ -36,8 +36,8 @@
   "BUTTON_SHOP_ALL": "Shop All",
   "BUTTON_SUBSCRIBE": "Subscribe",
   "BUTTON_TRACK": "Track",
-  "BUTTON_UPDATE_CART": "Update Cart",
-  "BUTTON_VIEW_CART": "View Cart",
+  "BUTTON_UPDATE_CART": "Update Quote",
+  "BUTTON_VIEW_CART": "View Quote",
 
   "COUNTRY_NAME_LAND": "RandomLand",
   "COUNTRY_NAME_RAND": "Random Federation",
@@ -105,9 +105,9 @@
   "HEADER_RELATED_PRODUCTS": "Related Products",
   "HEADER_SELECT_VEHICLE": "Select Vehicle",
   "HEADER_SHOP": "Shop",
-  "HEADER_SHOPPING_CART": "Shopping Cart",
-  "HEADER_SHOPPING_CART_EMPTY_SUBTITLE": "You have no products in your shopping cart.<br>Go to the home page to start browsing our store.",
-  "HEADER_SHOPPING_CART_EMPTY_TITLE": "Shopping Cart Is Empty",
+  "HEADER_SHOPPING_CART": "Quote List",
+  "HEADER_SHOPPING_CART_EMPTY_SUBTITLE": "You have no products in your quote list.<br>Go to the home page to start browsing our store.",
+  "HEADER_SHOPPING_CART_EMPTY_TITLE": "Quote List Is Empty",
   "HEADER_SPECIAL_OFFERS": "Special Offers",
   "HEADER_TOP_RATED": "Top Rated",
   "HEADER_TRACK_ORDER": "Track Order",
@@ -282,7 +282,7 @@
   "TEXT_EMAIL_ADDRESS": "Email Address",
   "TEXT_INDICATOR_ACCOUNT_LABEL": "Hello, Log In",
   "TEXT_INDICATOR_ACCOUNT_VALUE": "My Account",
-  "TEXT_INDICATOR_CART_LABEL": "Shopping Cart",
+  "TEXT_INDICATOR_CART_LABEL": "Quote List",
   "TEXT_KEY_FEATURES": "Key Features",
   "TEXT_MOBILE_INDICATOR_ACCOUNT": "Account",
   "TEXT_MOBILE_INDICATOR_CART": "Cart",
@@ -348,7 +348,7 @@
   "TEXT_TIMER_MINUTES": "Mins",
   "TEXT_TIMER_SECONDS": "Secs",
   "TEXT_TOAST_PASSWORD_CHANGED": "Password has been successfully changed.",
-  "TEXT_TOAST_PRODUCT_ADDED_TO_CART": "Product \"{productName}\" added to cart!",
+  "TEXT_TOAST_PRODUCT_ADDED_TO_CART": "Product \"{productName}\" added to quote list!",
   "TEXT_TOAST_PRODUCT_ADDED_TO_COMPARE": "Product \"{productName}\" added to compare!",
   "TEXT_TOAST_PRODUCT_ADDED_TO_WISHLIST": "Product \"{productName}\" added to wish list!",
   "TEXT_TOAST_PROFILE_SAVED": "Your account information was saved successfully.",
@@ -363,5 +363,5 @@
   "TEXT_VEHICLE_ENGINE": "Engine {engine}",
   "TEXT_VEHICLE_FILTER_HELP": "Select a vehicle to filter out only exact fit parts.",
   "TEXT_WORKING_HOURS": "Working Hours",
-  "TEXT_YOUR_SHOPPING_CART_IS_EMPTY": "Your shopping cart is empty!"
+  "TEXT_YOUR_SHOPPING_CART_IS_EMPTY": "Your quote list is empty!"
 }
