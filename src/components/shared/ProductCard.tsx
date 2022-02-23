@@ -12,7 +12,7 @@ import CompatibilityStatusBadge from '~/components/shared/CompatibilityStatusBad
 // import Rating from '~/components/shared/Rating';
 import url from '~/services/url';
 import { IProduct } from '~/interfaces/product';
-import { useCartAddItem } from '~/store/cart/cartHooks';
+// import { useCartAddItem } from '~/store/cart/cartHooks';
 import { useCompareAddItem } from '~/store/compare/compareHooks';
 import { useQuickviewOpen } from '~/store/quickview/quickviewHooks';
 import { useWishlistAddItem } from '~/store/wishlist/wishlistHooks';

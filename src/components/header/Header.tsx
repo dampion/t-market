@@ -18,11 +18,11 @@ import url from '~/services/url';
 import { Heart32Svg, Cart32Svg } from '~/svg';
 import { useCart } from '~/store/cart/cartHooks';
 import { useOptions } from '~/store/options/optionsHooks';
-import { useUser } from '~/store/user/userHooks';
+// import { useUser } from '~/store/user/userHooks';
 import { useWishlist } from '~/store/wishlist/wishlistHooks';
 
 function Header() {
-    const user = useUser();
+    // const user = useUser();
     const wishlist = useWishlist();
     const options = useOptions();
     const desktopLayout = options.desktopHeaderLayout;

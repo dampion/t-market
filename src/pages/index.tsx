@@ -14,8 +14,10 @@ import BlockSale from '~/components/blocks/BlockSale';
 import BlockSpace from '~/components/blocks/BlockSpace';
 import BlockZone from '~/components/blocks/BlockZone';
 import url from '~/services/url';
-import { shopApi, blogApi } from '~/api';
-import { useDeferredData, useProductColumns, useProductTabs } from '~/services/hooks';
+// import { shopApi, blogApi } from '~/api';
+import { shopApi } from '~/api';
+// import { useDeferredData, useProductColumns, useProductTabs } from '~/services/hooks';
+import { useDeferredData, useProductTabs } from '~/services/hooks';
 
 function Page() {
     const intl = useIntl();
