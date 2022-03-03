@@ -112,7 +112,8 @@ function Page() {
             </React.Fragment>
         );
     }
-
+    const idPrefix = '';
+    const fieldId = idPrefix ? `${idPrefix}-` : '';
     const table = (
         <table className="cart-table__table">
             <thead className="cart-table__head">
@@ -269,8 +270,114 @@ function Page() {
                     <FormattedMessage id="HEADER_CART_TOTALS" />
                 </h3>
 
-                <table className="cart__totals-table">
+                {/* <table className="cart__totals-table"> */}
+                <div className="cart__totals-table">
                     {cart.totals.length > 0 && (
+                        <React.Fragment>
+                            <div className="form-row">
+                                <div className="form-group col-md-6">
+                                    <label htmlFor={`${fieldId}first-name`}>
+                                        <FormattedMessage id="INPUT_FORM_NAME_LABEL" />
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id={`${fieldId}first-name`}
+                                        className={classNames('form-control', {
+                                            // 'is-invalid': errors?.firstName,
+                                        })}
+                                        placeholder={intl.formatMessage({ id: 'INPUT_FIRST_NAME_PLACEHOLDER' })}
+                                    // {...register(`${ns}firstName`, { required: true })}
+                                    />
+                                    <div className="invalid-feedback">
+                                        {/* {errors?.firstName?.type === 'required' && (
+                                    <FormattedMessage id="ERROR_FORM_REQUIRED" />
+                                )} */}
+                                    </div>
+                                </div>
+                                <div className="form-group col-md-6">
+                                    <label htmlFor={`${fieldId}first-name`}>
+                                        <FormattedMessage id="INPUT_FORM_COMPANY_LABEL" />
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id={`${fieldId}first-name`}
+                                        className={classNames('form-control', {
+                                            // 'is-invalid': errors?.firstName,
+                                        })}
+                                        placeholder={intl.formatMessage({ id: 'INPUT_FIRST_COMPAMY_PLACEHOLDER' })}
+                                    // {...register(`${ns}firstName`, { required: true })}
+                                    />
+                                    <div className="invalid-feedback">
+                                        {/* {errors?.firstName?.type === 'required' && (
+                                    <FormattedMessage id="ERROR_FORM_REQUIRED" />
+                                )} */}
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="form-row">
+                                <div className="form-group col-md-6">
+                                    <label htmlFor={`${fieldId}first-name`}>
+                                        <FormattedMessage id="INPUT_FORM_WEBSITE_LABEL" />
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id={`${fieldId}first-name`}
+                                        className={classNames('form-control', {
+                                            // 'is-invalid': errors?.firstName,
+                                        })}
+                                        placeholder={intl.formatMessage({ id: 'INPUT_FIRST_WEBSITE_PLACEHOLDER' })}
+                                    // {...register(`${ns}firstName`, { required: true })}
+                                    />
+                                    <div className="invalid-feedback">
+                                        {/* {errors?.firstName?.type === 'required' && (
+                                    <FormattedMessage id="ERROR_FORM_REQUIRED" />
+                                )} */}
+                                    </div>
+                                </div>
+                                <div className="form-group col-md-6">
+                                    <label htmlFor={`${fieldId}first-name`}>
+                                        <FormattedMessage id="INPUT_FORM_EMAIL_LABEL" />
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id={`${fieldId}first-name`}
+                                        className={classNames('form-control', {
+                                            // 'is-invalid': errors?.firstName,
+                                        })}
+                                        placeholder={intl.formatMessage({ id: 'INPUT_FIRST_EMAIL_PLACEHOLDER' })}
+                                    // {...register(`${ns}firstName`, { required: true })}
+                                    />
+                                    <div className="invalid-feedback">
+                                        {/* {errors?.firstName?.type === 'required' && (
+                                    <FormattedMessage id="ERROR_FORM_REQUIRED" />
+                                )} */}
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="form-row">
+                                <div className="form-group col-md-12">
+                                    <label htmlFor={`${fieldId}first-name`}>
+                                        <FormattedMessage id="INPUT_FORM_MESSAGE_LABEL" />
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id={`${fieldId}first-name`}
+                                        className={classNames('form-control', {
+                                            // 'is-invalid': errors?.firstName,
+                                        })}
+                                        placeholder={intl.formatMessage({ id: 'INPUT_FIRST_MESSAGE_PLACEHOLDER' })}
+                                    // {...register(`${ns}firstName`, { required: true })}
+                                    />
+                                    <div className="invalid-feedback">
+                                        {/* {errors?.firstName?.type === 'required' && (
+                                    <FormattedMessage id="ERROR_FORM_REQUIRED" />
+                                )} */}
+                                    </div>
+                                </div>
+                            </div>
+                        </React.Fragment>
+                    )}
+                    {/* {cart.totals.length > 0 && (
                         <React.Fragment>
                             <thead>
                                 <tr>
@@ -304,8 +411,8 @@ function Page() {
                                 ))}
                             </tbody>
                         </React.Fragment>
-                    )}
-                    <tfoot>
+                    )} */}
+                    {/* <tfoot>
                         <tr>
                             <th>
                                 <FormattedMessage id="TABLE_TOTAL" />
@@ -314,8 +421,8 @@ function Page() {
                                 <CurrencyFormat value={cart.total} />
                             </td>
                         </tr>
-                    </tfoot>
-                </table>
+                    </tfoot> */}
+                </div>
 
                 <AppLink href={url.checkout()} className="btn btn-primary btn-xl btn-block">
                     <FormattedMessage id="BUTTON_PROCEED_TO_CHECKOUT" />

@@ -8,16 +8,16 @@ import AppImage from '~/components/shared/AppImage';
 import AppLink from '~/components/shared/AppLink';
 import AsyncAction from '~/components/shared/AsyncAction';
 import CompatibilityStatusBadge from '~/components/shared/CompatibilityStatusBadge';
-// import CurrencyFormat from '~/components/shared/CurrencyFormat';
+import CurrencyFormat from '~/components/shared/CurrencyFormat';
 // import Rating from '~/components/shared/Rating';
 import url from '~/services/url';
 import { IProduct } from '~/interfaces/product';
-// import { useCartAddItem } from '~/store/cart/cartHooks';
+import { useCartAddItem } from '~/store/cart/cartHooks';
 import { useCompareAddItem } from '~/store/compare/compareHooks';
 import { useQuickviewOpen } from '~/store/quickview/quickviewHooks';
 import { useWishlistAddItem } from '~/store/wishlist/wishlistHooks';
 import {
-    // Plus242Svg,
+    Plus242Svg,
     Compare16Svg,
     Quickview16Svg,
     Wishlist16Svg,
@@ -43,7 +43,7 @@ function ProductCard(props: Props) {
     } = props;
     const intl = useIntl();
     const featuredAttributes = product.attributes.filter((x) => x.featured);
-    // const cartAddItem = useCartAddItem();
+    const cartAddItem = useCartAddItem();
     const quickviewOpen = useQuickviewOpen();
     const compareAddItem = useCompareAddItem();
     const wishlistAddItem = useWishlistAddItem();
@@ -173,21 +173,21 @@ function ProductCard(props: Props) {
                 )}
             </div>
 
-            {/* <div className="product-card__footer">
+            <div className="product-card__footer">
                 <div className="product-card__prices">
                     {product.compareAtPrice !== null && (
                         <React.Fragment>
                             <div className="product-card__price product-card__price--new">
-                                <CurrencyFormat value={product.price} />
+                                {/* <CurrencyFormat value={product.price} /> */}
                             </div>
                             <div className="product-card__price product-card__price--old">
-                                <CurrencyFormat value={product.compareAtPrice} />
+                                {/* <CurrencyFormat value={product.compareAtPrice} /> */}
                             </div>
                         </React.Fragment>
                     )}
                     {product.compareAtPrice === null && (
                         <div className="product-card__price product-card__price--current">
-                            <CurrencyFormat value={product.price} />
+                            {/* <CurrencyFormat value={product.price} /> */}
                         </div>
                     )}
                 </div>
@@ -262,7 +262,7 @@ function ProductCard(props: Props) {
                         )}
                     </React.Fragment>
                 )}
-            </div> */}
+            </div>
         </div>
     );
 }
