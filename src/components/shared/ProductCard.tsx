@@ -8,7 +8,7 @@ import AppImage from '~/components/shared/AppImage';
 import AppLink from '~/components/shared/AppLink';
 import AsyncAction from '~/components/shared/AsyncAction';
 import CompatibilityStatusBadge from '~/components/shared/CompatibilityStatusBadge';
-import CurrencyFormat from '~/components/shared/CurrencyFormat';
+// import CurrencyFormat from '~/components/shared/CurrencyFormat';
 // import Rating from '~/components/shared/Rating';
 import url from '~/services/url';
 import { IProduct } from '~/interfaces/product';

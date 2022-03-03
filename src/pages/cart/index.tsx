@@ -9,7 +9,7 @@ import AppLink from '~/components/shared/AppLink';
 import AsyncAction from '~/components/shared/AsyncAction';
 import BlockHeader from '~/components/blocks/BlockHeader';
 import BlockSpace from '~/components/blocks/BlockSpace';
-import CurrencyFormat from '~/components/shared/CurrencyFormat';
+// import CurrencyFormat from '~/components/shared/CurrencyFormat';
 import InputNumber from '~/components/shared/InputNumber';
 import PageTitle from '~/components/shared/PageTitle';
 import url from '~/services/url';
