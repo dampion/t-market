@@ -7,7 +7,7 @@ import { FormattedMessage } from 'react-intl';
 import AppImage from '~/components/shared/AppImage';
 import AppLink from '~/components/shared/AppLink';
 import AsyncAction from '~/components/shared/AsyncAction';
-import CurrencyFormat from '~/components/shared/CurrencyFormat';
+// import CurrencyFormat from '~/components/shared/CurrencyFormat';
 import url from '~/services/url';
 import { Cross10Svg } from '~/svg';
 import { useCart, useCartRemoveItem } from '~/store/cart/cartHooks';
@@ -68,9 +68,9 @@ function Dropcart(props: Props) {
                                         )}
                                         <div className="dropcart__item-meta">
                                             <div className="dropcart__item-quantity">{item.quantity}</div>
-                                            <div className="dropcart__item-price">
+                                            {/* <div className="dropcart__item-price">
                                                 <CurrencyFormat value={item.price} />
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                     <AsyncAction
@@ -92,7 +92,7 @@ function Dropcart(props: Props) {
                             </React.Fragment>
                         ))}
                     </ul>
-                    <div className="dropcart__totals">
+                    {/* <div className="dropcart__totals">
                         <table>
                             <tbody>
                                 {cart.totals.length > 0 && (
@@ -125,7 +125,7 @@ function Dropcart(props: Props) {
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
+                    </div> */}
                     <div className="dropcart__actions">
                         <AppLink href={url.cart()} className="btn btn-secondary" onClick={onCloseMenu}>
                             <FormattedMessage id="BUTTON_VIEW_CART" />

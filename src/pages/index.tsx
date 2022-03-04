@@ -4,13 +4,13 @@ import React, { useMemo } from 'react';
 import { useIntl } from 'react-intl';
 // application
 import BlockBanners from '~/components/blocks/BlockBanners';
-import BlockBrands from '~/components/blocks/BlockBrands';
+// import BlockBrands from '~/components/blocks/BlockBrands';
 import BlockFeatures from '~/components/blocks/BlockFeatures';
 import BlockFinder from '~/components/blocks/BlockFinder';
 // import BlockPosts from '~/components/blocks/BlockPosts';
 import BlockProductsCarousel from '~/components/blocks/BlockProductsCarousel';
 // import BlockProductsColumns from '~/components/blocks/BlockProductsColumns';
-import BlockSale from '~/components/blocks/BlockSale';
+// import BlockSale from '~/components/blocks/BlockSale';
 import BlockSpace from '~/components/blocks/BlockSpace';
 import BlockZone from '~/components/blocks/BlockZone';
 import url from '~/services/url';
@@ -35,7 +35,7 @@ function Page() {
         (tab) => shopApi.getFeaturedProducts(tab.categorySlug, 8),
     );
 
-    const blockSale = useDeferredData(() => shopApi.getSpecialOffers(8), []);
+    // const blockSale = useDeferredData(() => shopApi.getSpecialOffers(8), []);
 
     const blockZones = useMemo(() => [
         {
@@ -70,7 +70,7 @@ function Page() {
     //     { title: 'Reviews', url: url.blog() },
     // ], []);
 
-    const brands = useDeferredData(() => shopApi.getBrands({ limit: 16 }), []);
+    // const brands = useDeferredData(() => shopApi.getBrands({ limit: 16 }), []);
 
     /**
      * Product columns.
@@ -107,10 +107,10 @@ function Page() {
                 onChangeGroup={featuredProducts.handleTabChange}
             />
             <BlockSpace layout="divider-nl" />
-            <BlockSale
+            {/* <BlockSale
                 products={blockSale.data}
                 loading={blockSale.isLoading}
-            />
+            /> */}
             <BlockSpace layout="divider-lg" />
 
             {blockZones.map((blockZone, blockZoneIdx) => (
@@ -137,7 +137,7 @@ function Page() {
                 products={newArrivals.data}
                 links={newArrivalsLinks}
             />
-            <BlockSpace layout="divider-nl" />
+            {/* <BlockSpace layout="divider-nl" /> */}
             {/* <BlockPosts
                 blockTitle={intl.formatMessage({ id: 'HEADER_LATEST_NEWS' })}
                 layout="grid"
@@ -145,12 +145,12 @@ function Page() {
                 posts={latestPosts.data}
                 links={latestPostsLinks}
             /> */}
-            <BlockSpace layout="divider-nl" />
-            <BlockBrands
+            {/* <BlockSpace layout="divider-nl" /> */}
+            {/* <BlockBrands
                 layout="columns-8-full"
                 brands={brands.data}
-            />
-            <BlockSpace layout="divider-nl" className="d-xl-block d-none" />
+            /> */}
+            {/* <BlockSpace layout="divider-nl" className="d-xl-block d-none" /> */}
             {/* <BlockProductsColumns columns={columns} /> */}
             <BlockSpace layout="before-footer" />
         </React.Fragment>

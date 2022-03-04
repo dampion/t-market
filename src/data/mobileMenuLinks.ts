@@ -91,76 +91,76 @@ const dataMobileMenuLinks: IMobileMenuLink[] = [
             { title: 'Order Success', url: '/demo/shop/order-success' },
             { title: 'Wishlist', url: '/wishlist' },
             { title: 'Compare', url: '/compare' },
-            { title: 'Track Order', url: '/track-order' },
+            // { title: 'Track Order', url: '/track-order' },
         ],
     },
-    {
-        title: 'Blog',
-        url: '/demo/blog/classic-right-sidebar',
-        submenu: [
-            {
-                title: 'Blog Classic',
-                url: '/demo/blog/classic-right-sidebar',
-                submenu: [
-                    { title: 'Left Sidebar', url: '/demo/blog/classic-left-sidebar' },
-                    { title: 'Right Sidebar', url: '/demo/blog/classic-right-sidebar' },
-                ],
-            },
-            {
-                title: 'Blog List',
-                url: '/demo/blog/list-right-sidebar',
-                submenu: [
-                    { title: 'Left Sidebar', url: '/demo/blog/list-left-sidebar' },
-                    { title: 'Right Sidebar', url: '/demo/blog/list-right-sidebar' },
-                ],
-            },
-            {
-                title: 'Blog Grid',
-                url: '/demo/blog/grid-right-sidebar',
-                submenu: [
-                    { title: 'Left Sidebar', url: '/demo/blog/grid-left-sidebar' },
-                    { title: 'Right Sidebar', url: '/demo/blog/grid-right-sidebar' },
-                ],
-            },
-            {
-                title: 'Post Page',
-                url: '/demo/blog/post-full-width',
-                submenu: [
-                    { title: 'Full Width', url: '/demo/blog/post-full-width' },
-                    { title: 'Left Sidebar', url: '/demo/blog/post-left-sidebar' },
-                    { title: 'Right Sidebar', url: '/demo/blog/post-right-sidebar' },
-                ],
-            },
-            { title: 'Post Without Image', url: '/demo/blog/post-without-image' },
-        ],
-    },
-    {
-        title: 'Account',
-        url: '/account/dashboard',
-        submenu: [
-            { title: 'Login & Register', url: '/account/login' },
-            { title: 'Dashboard', url: '/account/dashboard' },
-            { title: 'Garage', url: '/account/garage' },
-            { title: 'Edit Profile', url: '/account/profile' },
-            { title: 'Order History', url: '/account/orders' },
-            {
-                title: 'Order Details',
-                url: {
-                    href: '/account/orders/[id]?id=1',
-                    as: '/account/orders/1',
-                },
-            },
-            { title: 'Address Book', url: '/account/addresses' },
-            {
-                title: 'Edit Address',
-                url: {
-                    href: '/account/addresses/[id]?id=new',
-                    as: '/account/addresses/new',
-                },
-            },
-            { title: 'Change Password', url: '/account/password' },
-        ],
-    },
+    // {
+    //     title: 'Blog',
+    //     url: '/demo/blog/classic-right-sidebar',
+    //     submenu: [
+    //         {
+    //             title: 'Blog Classic',
+    //             url: '/demo/blog/classic-right-sidebar',
+    //             submenu: [
+    //                 { title: 'Left Sidebar', url: '/demo/blog/classic-left-sidebar' },
+    //                 { title: 'Right Sidebar', url: '/demo/blog/classic-right-sidebar' },
+    //             ],
+    //         },
+    //         {
+    //             title: 'Blog List',
+    //             url: '/demo/blog/list-right-sidebar',
+    //             submenu: [
+    //                 { title: 'Left Sidebar', url: '/demo/blog/list-left-sidebar' },
+    //                 { title: 'Right Sidebar', url: '/demo/blog/list-right-sidebar' },
+    //             ],
+    //         },
+    //         {
+    //             title: 'Blog Grid',
+    //             url: '/demo/blog/grid-right-sidebar',
+    //             submenu: [
+    //                 { title: 'Left Sidebar', url: '/demo/blog/grid-left-sidebar' },
+    //                 { title: 'Right Sidebar', url: '/demo/blog/grid-right-sidebar' },
+    //             ],
+    //         },
+    //         {
+    //             title: 'Post Page',
+    //             url: '/demo/blog/post-full-width',
+    //             submenu: [
+    //                 { title: 'Full Width', url: '/demo/blog/post-full-width' },
+    //                 { title: 'Left Sidebar', url: '/demo/blog/post-left-sidebar' },
+    //                 { title: 'Right Sidebar', url: '/demo/blog/post-right-sidebar' },
+    //             ],
+    //         },
+    //         { title: 'Post Without Image', url: '/demo/blog/post-without-image' },
+    //     ],
+    // },
+    // {
+    //     title: 'Account',
+    //     url: '/account/dashboard',
+    //     submenu: [
+    //         { title: 'Login & Register', url: '/account/login' },
+    //         { title: 'Dashboard', url: '/account/dashboard' },
+    //         { title: 'Garage', url: '/account/garage' },
+    //         { title: 'Edit Profile', url: '/account/profile' },
+    //         { title: 'Order History', url: '/account/orders' },
+    //         {
+    //             title: 'Order Details',
+    //             url: {
+    //                 href: '/account/orders/[id]?id=1',
+    //                 as: '/account/orders/1',
+    //             },
+    //         },
+    //         { title: 'Address Book', url: '/account/addresses' },
+    //         {
+    //             title: 'Edit Address',
+    //             url: {
+    //                 href: '/account/addresses/[id]?id=new',
+    //                 as: '/account/addresses/new',
+    //             },
+    //         },
+    //         { title: 'Change Password', url: '/account/password' },
+    //     ],
+    // },
     {
         title: 'Pages',
         url: '/about-us',
@@ -175,16 +175,16 @@ const dataMobileMenuLinks: IMobileMenuLink[] = [
             { title: 'Typography', url: '/demo/site/typography' },
         ],
     },
-    {
-        title: 'Buy Theme',
-        url: 'https://themeforest.net/item/redparts-auto-parts-react-ecommerce-template/28404847',
-        customFields: {
-            anchorProps: {
-                target: '_blank',
-            },
-            highlight: true,
-        },
-    },
+    // {
+    //     title: 'Buy Theme',
+    //     url: 'https://themeforest.net/item/redparts-auto-parts-react-ecommerce-template/28404847',
+    //     customFields: {
+    //         anchorProps: {
+    //             target: '_blank',
+    //         },
+    //         highlight: true,
+    //     },
+    // },
 ];
 
 export default dataMobileMenuLinks;

@@ -222,7 +222,7 @@ function Page() {
                     <td colSpan={6}>
                         <div className="cart-table__actions">
                             <form className="cart-table__coupon-form form-row">
-                                <div className="form-group mb-0 col flex-grow-1">
+                                {/* <div className="form-group mb-0 col flex-grow-1">
                                     <label htmlFor="coupon-code" className="sr-only">
                                         <FormattedMessage id="INPUT_COUPON_CODE_LABEL" />
                                     </label>
@@ -237,7 +237,7 @@ function Page() {
                                     <button type="button" className="btn btn-sm btn-primary">
                                         <FormattedMessage id="BUTTON_APPLY_COUPON" />
                                     </button>
-                                </div>
+                                </div> */}
                             </form>
                             <div className="cart-table__update-button">
                                 <AsyncAction
@@ -275,7 +275,7 @@ function Page() {
                     {cart.totals.length > 0 && (
                         <React.Fragment>
                             <div className="form-row">
-                                <div className="form-group col-md-6">
+                                <div className="form-group col-md-6 required">
                                     <label htmlFor={`${fieldId}first-name`}>
                                         <FormattedMessage id="INPUT_FORM_NAME_LABEL" />
                                     </label>
@@ -294,7 +294,7 @@ function Page() {
                                 )} */}
                                     </div>
                                 </div>
-                                <div className="form-group col-md-6">
+                                <div className="form-group col-md-6 required">
                                     <label htmlFor={`${fieldId}first-name`}>
                                         <FormattedMessage id="INPUT_FORM_COMPANY_LABEL" />
                                     </label>
@@ -315,7 +315,7 @@ function Page() {
                                 </div>
                             </div>
                             <div className="form-row">
-                                <div className="form-group col-md-6">
+                                <div className="form-group col-md-6 required">
                                     <label htmlFor={`${fieldId}first-name`}>
                                         <FormattedMessage id="INPUT_FORM_WEBSITE_LABEL" />
                                     </label>
@@ -334,7 +334,7 @@ function Page() {
                                 )} */}
                                     </div>
                                 </div>
-                                <div className="form-group col-md-6">
+                                <div className="form-group col-md-6 required">
                                     <label htmlFor={`${fieldId}first-name`}>
                                         <FormattedMessage id="INPUT_FORM_EMAIL_LABEL" />
                                     </label>
@@ -355,7 +355,7 @@ function Page() {
                                 </div>
                             </div>
                             <div className="form-row">
-                                <div className="form-group col-md-12">
+                                <div className="form-group col-md-12 required">
                                     <label htmlFor={`${fieldId}first-name`}>
                                         <FormattedMessage id="INPUT_FORM_MESSAGE_LABEL" />
                                     </label>

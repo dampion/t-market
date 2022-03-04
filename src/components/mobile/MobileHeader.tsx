@@ -13,21 +13,21 @@ import { useCart } from '~/store/cart/cartHooks';
 import { useGarageCurrent, useGarageSetCurrent } from '~/store/garage/garageHooks';
 import { useGlobalMousedown } from '~/services/hooks';
 import { useMobileMenuOpen } from '~/store/mobile-menu/mobileMenuHooks';
-import { useWishlist } from '~/store/wishlist/wishlistHooks';
+// import { useWishlist } from '~/store/wishlist/wishlistHooks';
 import {
     Car20Svg,
     Plus242Svg,
     Cross20Svg,
-    Heart20Svg,
+    // Heart20Svg,
     Menu18x14Svg,
-    Person20Svg,
+    // Person20Svg,
     Search20Svg,
 } from '~/svg';
 
 function MobileHeader() {
     const intl = useIntl();
     const mobileMenuOpen = useMobileMenuOpen();
-    const wishlist = useWishlist();
+    // const wishlist = useWishlist();
     const cart = useCart();
     const vehicle: IVehicle | null = useGarageCurrent();
     const garageSetCurrent = useGarageSetCurrent();
@@ -159,14 +159,14 @@ function MobileHeader() {
                                 </span>
                             </button>
                         </div>
-                        <div className="mobile-indicator d-none d-md-block">
+                        {/* <div className="mobile-indicator d-none d-md-block">
                             <AppLink href={url.accountDashboard()} className="mobile-indicator__button">
                                 <span className="mobile-indicator__icon">
                                     <Person20Svg />
                                 </span>
                             </AppLink>
-                        </div>
-                        <div className="mobile-indicator d-none d-md-block">
+                        </div> */}
+                        {/* <div className="mobile-indicator d-none d-md-block">
                             <AppLink href={url.wishlist()} className="mobile-indicator__button">
                                 <span className="mobile-indicator__icon">
                                     <Heart20Svg />
@@ -177,7 +177,7 @@ function MobileHeader() {
                                     )}
                                 </span>
                             </AppLink>
-                        </div>
+                        </div> */}
                         <div className="mobile-indicator">
                             <AppLink href={url.cart()} className="mobile-indicator__button">
                                 <span className="mobile-indicator__icon">

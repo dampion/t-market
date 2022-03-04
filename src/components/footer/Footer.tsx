@@ -8,7 +8,7 @@ import AppLink from '~/components/shared/AppLink';
 import Decor from '~/components/shared/Decor';
 import FooterContacts from '~/components/footer/FooterContacts';
 import FooterLinks from '~/components/footer/FooterLinks';
-import FooterNewsletter from '~/components/footer/FooterNewsletter';
+// import FooterNewsletter from '~/components/footer/FooterNewsletter';
 // data
 import theme from '~/data/theme';
 
@@ -19,10 +19,10 @@ export function Footer() {
             <div className="site-footer__widgets">
                 <div className="container">
                     <div className="row">
-                        <div className="col-12 col-xl-4">
+                        <div className="col-18 col-xl-6">
                             <FooterContacts className="site-footer__widget" />
                         </div>
-                        <div className="col-6 col-md-3 col-xl-2">
+                        <div className="col-9 col-md-6 col-xl-3">
                             <FooterLinks
                                 className="site-footer__widget"
                                 header={<FormattedMessage id="HEADER_INFORMATION" />}
@@ -37,7 +37,7 @@ export function Footer() {
                                 ]}
                             />
                         </div>
-                        <div className="col-6 col-md-3 col-xl-2">
+                        <div className="col-9 col-md-6 col-xl-3">
                             <FooterLinks
                                 className="site-footer__widget"
                                 header={<FormattedMessage id="HEADER_MY_ACCOUNT" />}
@@ -52,9 +52,9 @@ export function Footer() {
                                 ]}
                             />
                         </div>
-                        <div className="col-12 col-md-6 col-xl-4">
+                        {/* <div className="col-12 col-md-6 col-xl-4">
                             <FooterNewsletter className="site-footer__widget" />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

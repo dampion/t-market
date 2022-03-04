@@ -6,7 +6,7 @@ import { FormattedMessage, useIntl } from 'react-intl';
 // application
 import AppImage from '~/components/shared/AppImage';
 import AppLink from '~/components/shared/AppLink';
-import BlockBrands from '~/components/blocks/BlockBrands';
+// import BlockBrands from '~/components/blocks/BlockBrands';
 import BlockHeader from '~/components/blocks/BlockHeader';
 import BlockProductsCarousel from '~/components/blocks/BlockProductsCarousel';
 import BlockSpace from '~/components/blocks/BlockSpace';
@@ -15,7 +15,7 @@ import url from '~/services/url';
 import WidgetCategoriesList from '~/components/widgets/WidgetCategoriesList';
 import WidgetProducts from '~/components/widgets/WidgetProducts';
 import { getCategoryPath } from '~/services/utils';
-import { IBrand } from '~/interfaces/brand';
+// import { IBrand } from '~/interfaces/brand';
 import { IShopCategoryPageLayout, IShopCategoryPageSidebarPosition } from '~/interfaces/pages';
 import { IProduct } from '~/interfaces/product';
 import { IShopCategory } from '~/interfaces/category';
@@ -34,7 +34,7 @@ function ShopPageCategory(props: Props) {
     const { layout, sidebarPosition = 'start', category } = props;
     let { subcategories } = props;
     const hasSidebar = layout.endsWith('-sidebar');
-    const [brands, setBrands] = useState<IBrand[]>([]);
+    // const [brands, setBrands] = useState<IBrand[]>([]);
     const [latestProducts, setLatestProducts] = useState<IProduct[]>([]);
 
     if (category && subcategories === undefined) {
@@ -54,13 +54,13 @@ function ShopPageCategory(props: Props) {
     useEffect(() => {
         let canceled = false;
 
-        shopApi.getBrands({ limit: (hasSidebar ? 7 : 8) * 2 }).then((result) => {
-            if (canceled) {
-                return;
-            }
+        // shopApi.getBrands({ limit: (hasSidebar ? 7 : 8) * 2 }).then((result) => {
+        //     if (canceled) {
+        //         return;
+        //     }
 
-            setBrands(result);
-        });
+        //     setBrands(result);
+        // });
 
         if (hasSidebar) {
             shopApi.getLatestProducts(5).then((result) => {
@@ -196,10 +196,10 @@ function ShopPageCategory(props: Props) {
 
                             <BlockSpace layout="divider-nl" />
 
-                            <BlockBrands
+                            {/* <BlockBrands
                                 layout={hasSidebar ? 'columns-7-sidebar' : 'columns-8-full'}
                                 brands={brands}
-                            />
+                            /> */}
                         </div>
 
                         {hasSidebar && sidebarPosition === 'end' && sidebar}

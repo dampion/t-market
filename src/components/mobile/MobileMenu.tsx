@@ -8,10 +8,10 @@ import { FormattedMessage } from 'react-intl';
 // application
 import AppLink from '~/components/shared/AppLink';
 import MobileMenuConveyor, { IMobileMenuConveyorController } from '~/components/mobile/MobileMenuConveyor';
-import MobileMenuIndicators from '~/components/mobile/MobileMenuIndicators';
+// import MobileMenuIndicators from '~/components/mobile/MobileMenuIndicators';
 import MobileMenuLinks from '~/components/mobile/MobileMenuLinks';
 import MobileMenuPanel from '~/components/mobile/MobileMenuPanel';
-import MobileMenuSettings from '~/components/mobile/MobileMenuSettings';
+// import MobileMenuSettings from '~/components/mobile/MobileMenuSettings';
 import url from '~/services/url';
 import { Cross12Svg } from '~/svg';
 import { useMobileMenu, useMobileMenuClose } from '~/store/mobile-menu/mobileMenuHooks';
@@ -50,10 +50,10 @@ function MobileMenu() {
 
                 <MobileMenuConveyor controllerRef={conveyorRef}>
                     <MobileMenuPanel label="Menu">
-                        <MobileMenuSettings />
-                        <div className="mobile-menu__divider" />
-                        <MobileMenuIndicators />
-                        <div className="mobile-menu__divider" />
+                        {/* <MobileMenuSettings /> */}
+                        {/* <div className="mobile-menu__divider" /> */}
+                        {/* <MobileMenuIndicators /> */}
+                        {/* <div className="mobile-menu__divider" /> */}
                         <MobileMenuLinks items={dataMobileMenuLinks} />
 
                         <div className="mobile-menu__spring" />

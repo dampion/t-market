@@ -5,7 +5,7 @@ import { FormattedMessage } from 'react-intl';
 // application
 // import AccountMenu from '~/components/header/AccountMenu';
 import AppLink from '~/components/shared/AppLink';
-import CurrencyFormat from '~/components/shared/CurrencyFormat';
+// import CurrencyFormat from '~/components/shared/CurrencyFormat';
 import Departments from '~/components/header/Departments';
 import Dropcart from '~/components/header/Dropcart';
 import Indicator, { IIndicatorController } from '~/components/header/Indicator';
@@ -38,7 +38,8 @@ function Header() {
     // const accountIndicatorCtrl = useRef<IIndicatorController | null>(null);
 
     const cart = useCart();
-    const cartIndicatorLabel = <FormattedMessage id="TEXT_INDICATOR_CART_LABEL" />;
+    const cartIndicatorLabel = ''; // <FormattedMessage id="TEXT_INDICATOR_CART_LABEL" />;
+    const cartTotal = ''; // <CurrencyFormat value={cart.total} />
     const cartIndicatorCtrl = useRef<IIndicatorController | null>(null);
 
     return (
@@ -109,7 +110,7 @@ function Header() {
                     href={url.cart()}
                     icon={<Cart32Svg />}
                     label={cartIndicatorLabel}
-                    value={<CurrencyFormat value={cart.total} />}
+                    value={cartTotal}
                     counter={cart.quantity}
                     trigger="click"
                     controllerRef={cartIndicatorCtrl}

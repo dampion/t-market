@@ -72,18 +72,18 @@ function BlockZone(props: Props) {
     };
 
     const tabs: IBlockZoneTab[] = useMemo(() => [
-        {
-            name: intl.formatMessage({ id: 'TEXT_TAB_FEATURED' }),
-            source: () => shopApi.getFeaturedProducts(categorySlug, 6),
-        },
+        // {
+        //     name: intl.formatMessage({ id: 'TEXT_TAB_FEATURED' }),
+        //     source: () => shopApi.getFeaturedProducts(categorySlug, 6),
+        // },
         {
             name: intl.formatMessage({ id: 'TEXT_TAB_BESTSELLERS' }),
             source: () => shopApi.getPopularProducts(categorySlug, 6),
         },
-        {
-            name: intl.formatMessage({ id: 'TEXT_TAB_TOP_RATED' }),
-            source: () => shopApi.getTopRatedProducts(categorySlug, 6),
-        },
+        // {
+        //     name: intl.formatMessage({ id: 'TEXT_TAB_TOP_RATED' }),
+        //     source: () => shopApi.getTopRatedProducts(categorySlug, 6),
+        // },
     ], [intl, categorySlug]);
 
     const load = (tab: IBlockZoneTab) => {

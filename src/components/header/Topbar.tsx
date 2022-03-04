@@ -5,10 +5,10 @@ import classNames from 'classnames';
 import { FormattedMessage } from 'react-intl';
 // application
 import AppLink from '~/components/shared/AppLink';
-import DropdownCurrency from '~/components/header/DropdownCurrency';
-import DropdownLanguage from '~/components/header/DropdownLanguage';
+// import DropdownCurrency from '~/components/header/DropdownCurrency';
+// import DropdownLanguage from '~/components/header/DropdownLanguage';
 import url from '~/services/url';
-import { useCompare } from '~/store/compare/compareHooks';
+// import { useCompare } from '~/store/compare/compareHooks';
 
 type Layout = 'spaceship-start' | 'spaceship-end' | 'classic';
 
@@ -18,7 +18,7 @@ interface Props {
 
 function Topbar(props: Props) {
     const { layout } = props;
-    const compare = useCompare();
+    // const compare = useCompare();
     const rootClasses = classNames('topbar', `topbar--${layout}`);
 
     return (
@@ -38,11 +38,11 @@ function Topbar(props: Props) {
                             <FormattedMessage id="LINK_CONTACTS" />
                         </AppLink>
                     </div>
-                    <div className="topbar__item-text">
+                    {/* <div className="topbar__item-text">
                         <AppLink href={url.trackOrder()} className="topbar__link">
                             <FormattedMessage id="LINK_TRACK_ORDER" />
                         </AppLink>
-                    </div>
+                    </div> */}
                 </React.Fragment>
             )}
             {layout === 'classic' && (
@@ -78,18 +78,18 @@ function Topbar(props: Props) {
             {layout !== 'spaceship-start' && (
                 <React.Fragment>
                     <div className="topbar__item-button">
-                        <AppLink href={url.compare()} className="topbar__button">
+                        {/* <AppLink href={url.compare()} className="topbar__button">
                             <span className="topbar__button-label">
                                 <FormattedMessage id="TEXT_TOPBAR_COMPARE" />
                                 :
                             </span>
                             <span className="topbar__button-title">{compare.items.length}</span>
-                        </AppLink>
+                        </AppLink> */}
                     </div>
 
-                    <DropdownCurrency />
+                    {/* <DropdownCurrency /> */}
 
-                    <DropdownLanguage />
+                    {/* <DropdownLanguage /> */}
                 </React.Fragment>
             )}
         </div>
