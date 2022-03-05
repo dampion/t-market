@@ -181,7 +181,8 @@ function MobileHeader() {
                         <div className="mobile-indicator">
                             <AppLink href={url.cart()} className="mobile-indicator__button">
                                 <span className="mobile-indicator__icon">
-                                    <Plus242Svg />
+                                    {/* <Plus242Svg /> */}
+                                    <img src="/images/list-svgrepo-com.svg" alt="" height="20" />
                                     {cart.quantity > 0 && (
                                         <span className="mobile-indicator__counter">
                                             {cart.quantity}

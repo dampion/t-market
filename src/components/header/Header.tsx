@@ -108,7 +108,8 @@ function Header() {
 
                 <Indicator
                     href={url.cart()}
-                    icon={<Cart32Svg />}
+                    // icon={<Cart32Svg />}
+                    icon={<img src="/images/list-svgrepo-com.svg" alt="" />}
                     label={cartIndicatorLabel}
                     value={cartTotal}
                     counter={cart.quantity}

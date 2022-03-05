@@ -21,7 +21,7 @@ class MyDocument extends Document {
         return (
             <Html lang={lang} dir={dir}>
                 <Head>
-                    <link rel="shortcut icon" href={baseUrl('https://red-parts.react.themeforest.scompiler.ru/themes/red/images/favicon.png')} />
+                    <link rel="shortcut icon" href="/images/Tranzac logo_edit.png" />
 
                     {/* fonts */}
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" />

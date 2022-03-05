@@ -1,5 +1,5 @@
 const theme = {
-    name: 'RedParts',
+    name: 'Tranzac',
     url: 'https://themeforest.net/item/redparts-auto-parts-react-ecommerce-template/28404847',
     author: {
         name: 'Kos',
