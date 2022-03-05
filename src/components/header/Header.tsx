@@ -15,7 +15,7 @@ import Search from '~/components/header/Search';
 import Topbar from '~/components/header/Topbar';
 import url from '~/services/url';
 // import { Heart32Svg, Person32Svg, Cart32Svg } from '~/svg';
-import { Heart32Svg, Cart32Svg } from '~/svg';
+import { Heart32Svg } from '~/svg';
 import { useCart } from '~/store/cart/cartHooks';
 import { useOptions } from '~/store/options/optionsHooks';
 // import { useUser } from '~/store/user/userHooks';

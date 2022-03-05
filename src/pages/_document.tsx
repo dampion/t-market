@@ -8,7 +8,7 @@ import Document, {
     NextScript,
 } from 'next/document';
 // application
-import { baseUrl } from '~/services/utils';
+// import { baseUrl } from '~/services/utils';
 import { getDefaultLanguage, getLanguageByPath } from '~/services/i18n/utils';
 
 class MyDocument extends Document {

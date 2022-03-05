@@ -16,7 +16,7 @@ import { useMobileMenuOpen } from '~/store/mobile-menu/mobileMenuHooks';
 // import { useWishlist } from '~/store/wishlist/wishlistHooks';
 import {
     Car20Svg,
-    Plus242Svg,
+    // Plus242Svg,
     Cross20Svg,
     // Heart20Svg,
     Menu18x14Svg,
