@@ -5,7 +5,7 @@ import { useIntl } from 'react-intl';
 // application
 import BlockBanners from '~/components/blocks/BlockBanners';
 // import BlockBrands from '~/components/blocks/BlockBrands';
-import BlockFeatures from '~/components/blocks/BlockFeatures';
+// import BlockFeatures from '~/components/blocks/BlockFeatures';
 import BlockFinder from '~/components/blocks/BlockFinder';
 // import BlockPosts from '~/components/blocks/BlockPosts';
 import BlockProductsCarousel from '~/components/blocks/BlockProductsCarousel';
@@ -95,7 +95,7 @@ function Page() {
     return (
         <React.Fragment>
             <BlockFinder />
-            <BlockFeatures layout="top-strip" />
+            {/* <BlockFeatures layout="top-strip" /> */}
             <BlockSpace layout="divider-nl" />
             <BlockProductsCarousel
                 blockTitle={intl.formatMessage({ id: 'HEADER_FEATURED_PRODUCTS' })}

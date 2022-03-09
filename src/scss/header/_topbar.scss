@@ -206,7 +206,7 @@
     @if ($header-layout == spaceship) {
         .topbar--spaceship-start {
             @include local-define-scheme($topbar-spaceship-start-scheme);
-            background-color: #275CAA;
+            // background-color: #275CAA;
         }
         .topbar--spaceship-end {
             @include local-define-scheme($topbar-spaceship-end-scheme);

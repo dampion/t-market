@@ -75,7 +75,7 @@ function ProductCard(props: Props) {
                     )}
                 />
 
-                {!exclude.includes('actions') && (
+                {/* {!exclude.includes('actions') && (
                     <React.Fragment>
                         <AsyncAction
                             action={() => addToWishlist()}
@@ -108,7 +108,7 @@ function ProductCard(props: Props) {
                             )}
                         />
                     </React.Fragment>
-                )}
+                )} */}
             </div>
 
             <div className="product-card__image">

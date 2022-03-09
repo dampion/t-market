@@ -122,7 +122,7 @@
                 transform: skewX(#{-30deg * $transform-direction});
                 transform-origin: top $inline-end;
             }
-            background-color: #275CAA;
+            // background-color: #275CAA;
         }
         .header__topbar-end-bg:before {
             @include direction {
@@ -162,7 +162,7 @@
         }
         .header__topbar-start-bg:before {
             background: map_get($topbar-spaceship-start-scheme, main);
-            background-color: #275CAA;
+            // background-color: #275CAA;
         }
         .header__topbar-end-bg:before {
             background: map_get($topbar-spaceship-end-scheme, main);

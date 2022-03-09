@@ -3,14 +3,14 @@ import React from 'react';
 // third-party
 import { FormattedMessage } from 'react-intl';
 // application
-import AppImage from '~/components/shared/AppImage';
-import AppLink from '~/components/shared/AppLink';
+// import AppImage from '~/components/shared/AppImage';
+// import AppLink from '~/components/shared/AppLink';
 import Decor from '~/components/shared/Decor';
 import FooterContacts from '~/components/footer/FooterContacts';
 import FooterLinks from '~/components/footer/FooterLinks';
 // import FooterNewsletter from '~/components/footer/FooterNewsletter';
 // data
-import theme from '~/data/theme';
+// import theme from '~/data/theme';
 
 export function Footer() {
     return (
@@ -58,11 +58,10 @@ export function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="site-footer__bottom">
+            {/* <div className="site-footer__bottom">
                 <div className="container">
                     <div className="site-footer__bottom-row">
                         <div className="site-footer__copyright">
-                            {/* copyright */}
                             {'Powered by '}
                             <AppLink href="https://reactjs.org/" target="_blank" rel="noreferrer">React</AppLink>
                             {' / '}
@@ -71,14 +70,13 @@ export function Footer() {
                             <AppLink href={theme.author.profile_url} target="_blank" rel="noreferrer">
                                 {theme.author.name}
                             </AppLink>
-                            {/* copyright / end */}
                         </div>
                         <div className="site-footer__payments">
                             <AppImage src="/images/payments.png" />
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

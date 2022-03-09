@@ -15,10 +15,15 @@ export function getYears(): Promise<number[]> {
     return delayResponse(Promise.resolve(result.sort()), 750);
 }
 
-export function getMakes(year: number): Promise<string[]> {
+export function getMakes(): Promise<string[]> {
     const result: string[] = [];
 
-    vehicles.filter((x) => x.year === year).forEach((vehicle) => {
+    // vehicles.filter((x) => x.year === year).forEach((vehicle) => {
+    //     if (result.indexOf(vehicle.make) === -1) {
+    //         result.push(vehicle.make);
+    //     }
+    // });
+    vehicles.forEach((vehicle) => {
         if (result.indexOf(vehicle.make) === -1) {
             result.push(vehicle.make);
         }
@@ -27,10 +32,10 @@ export function getMakes(year: number): Promise<string[]> {
     return delayResponse(Promise.resolve(result.sort()), 750);
 }
 
-export function getModels(year: number, make: string): Promise<string[]> {
+export function getModels(make: string): Promise<string[]> {
     const result: string[] = [];
 
-    vehicles.filter((x) => x.year === year && x.make === make).forEach((vehicle) => {
+    vehicles.filter((x) => x.make === make).forEach((vehicle) => {
         if (result.indexOf(vehicle.model) === -1) {
             result.push(vehicle.model);
         }
@@ -39,8 +44,8 @@ export function getModels(year: number, make: string): Promise<string[]> {
     return delayResponse(Promise.resolve(result.sort()), 750);
 }
 
-export function getVehicles(year: number, make: string, model: string): Promise<IVehicle[]> {
-    const result = vehicles.filter((x) => x.year === year && x.make === make && x.model === model);
+export function getVehicles(make: string): Promise<IVehicle[]> {
+    const result = vehicles.filter((x) => x.make === make);
 
     return delayResponse(Promise.resolve(result.sort()), 750);
 }

@@ -4,10 +4,10 @@ import React from 'react';
 import classNames from 'classnames';
 import { FormattedMessage } from 'react-intl';
 // application
-import AppLink from '~/components/shared/AppLink';
+// import AppLink from '~/components/shared/AppLink';
 // import DropdownCurrency from '~/components/header/DropdownCurrency';
 // import DropdownLanguage from '~/components/header/DropdownLanguage';
-import url from '~/services/url';
+// import url from '~/services/url';
 // import { useCompare } from '~/store/compare/compareHooks';
 
 type Layout = 'spaceship-start' | 'spaceship-end' | 'classic';
@@ -28,7 +28,7 @@ function Topbar(props: Props) {
                     <div className="topbar__item-text d-none d-xxl-flex">
                         <FormattedMessage id="TEXT_TOPBAR_PHONE" values={{ phone: '(800) 060-0730' }} />
                     </div>
-                    <div className="topbar__item-text">
+                    {/* <div className="topbar__item-text">
                         <AppLink href={url.pageAboutUs()} className="topbar__link">
                             <FormattedMessage id="LINK_ABOUT_US" />
                         </AppLink>
@@ -37,7 +37,7 @@ function Topbar(props: Props) {
                         <AppLink href={url.pageContactUs()} className="topbar__link">
                             <FormattedMessage id="LINK_CONTACTS" />
                         </AppLink>
-                    </div>
+                    </div> */}
                     {/* <div className="topbar__item-text">
                         <AppLink href={url.trackOrder()} className="topbar__link">
                             <FormattedMessage id="LINK_TRACK_ORDER" />
@@ -47,7 +47,7 @@ function Topbar(props: Props) {
             )}
             {layout === 'classic' && (
                 <React.Fragment>
-                    <div className="topbar__item-text">
+                    {/* <div className="topbar__item-text">
                         <AppLink href={url.pageAboutUs()} className="topbar__link">
                             <FormattedMessage id="LINK_ABOUT_US" />
                         </AppLink>
@@ -71,7 +71,7 @@ function Topbar(props: Props) {
                         <AppLink href={url.blog()} className="topbar__link">
                             <FormattedMessage id="LINK_BLOG" />
                         </AppLink>
-                    </div>
+                    </div> */}
                     <div className="topbar__item-spring" />
                 </React.Fragment>
             )}

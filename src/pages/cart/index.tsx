@@ -285,7 +285,7 @@ function Page() {
                                         className={classNames('form-control', {
                                             // 'is-invalid': errors?.firstName,
                                         })}
-                                        placeholder={intl.formatMessage({ id: 'INPUT_FIRST_NAME_PLACEHOLDER' })}
+                                        // placeholder={intl.formatMessage({ id: 'INPUT_FIRST_NAME_PLACEHOLDER' })}
                                     // {...register(`${ns}firstName`, { required: true })}
                                     />
                                     <div className="invalid-feedback">
@@ -304,7 +304,7 @@ function Page() {
                                         className={classNames('form-control', {
                                             // 'is-invalid': errors?.firstName,
                                         })}
-                                        placeholder={intl.formatMessage({ id: 'INPUT_FIRST_COMPAMY_PLACEHOLDER' })}
+                                        // placeholder={intl.formatMessage({ id: 'INPUT_FIRST_COMPAMY_PLACEHOLDER' })}
                                     // {...register(`${ns}firstName`, { required: true })}
                                     />
                                     <div className="invalid-feedback">
@@ -315,7 +315,7 @@ function Page() {
                                 </div>
                             </div>
                             <div className="form-row">
-                                <div className="form-group col-md-6 required">
+                                <div className="form-group col-md-6">
                                     <label htmlFor={`${fieldId}first-name`}>
                                         <FormattedMessage id="INPUT_FORM_WEBSITE_LABEL" />
                                     </label>
@@ -325,7 +325,7 @@ function Page() {
                                         className={classNames('form-control', {
                                             // 'is-invalid': errors?.firstName,
                                         })}
-                                        placeholder={intl.formatMessage({ id: 'INPUT_FIRST_WEBSITE_PLACEHOLDER' })}
+                                        // placeholder={intl.formatMessage({ id: 'INPUT_FIRST_WEBSITE_PLACEHOLDER' })}
                                     // {...register(`${ns}firstName`, { required: true })}
                                     />
                                     <div className="invalid-feedback">
@@ -344,7 +344,7 @@ function Page() {
                                         className={classNames('form-control', {
                                             // 'is-invalid': errors?.firstName,
                                         })}
-                                        placeholder={intl.formatMessage({ id: 'INPUT_FIRST_EMAIL_PLACEHOLDER' })}
+                                        // placeholder={intl.formatMessage({ id: 'INPUT_FIRST_EMAIL_PLACEHOLDER' })}
                                     // {...register(`${ns}firstName`, { required: true })}
                                     />
                                     <div className="invalid-feedback">
@@ -365,7 +365,7 @@ function Page() {
                                         className={classNames('form-control', {
                                             // 'is-invalid': errors?.firstName,
                                         })}
-                                        placeholder={intl.formatMessage({ id: 'INPUT_FIRST_MESSAGE_PLACEHOLDER' })}
+                                        // placeholder={intl.formatMessage({ id: 'INPUT_FIRST_MESSAGE_PLACEHOLDER' })}
                                     // {...register(`${ns}firstName`, { required: true })}
                                     />
                                     <div className="invalid-feedback">

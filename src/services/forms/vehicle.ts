@@ -71,26 +71,26 @@ export default function useVehicleForm(options: IOptions = {}) {
     const { onChange } = options;
     const cancelPrevRequestRef = useRef(() => {});
     const [items, setItems] = useState(makeItems([
-        {
-            key: 'year',
-            label: intl.formatMessage({ id: 'INPUT_VEHICLE_YEAR_LABEL' }),
-            placeholder: intl.formatMessage({ id: 'INPUT_VEHICLE_YEAR_PLACEHOLDER' }),
-            optionsSource: vehicleApi.getYears.bind(vehicleApi),
-            serializeOptionFn: (option: number) => option.toString(),
-            deserializeOptionFn: (option: string) => parseFloat(option),
-        },
+        // {
+        //     key: 'year',
+        //     label: intl.formatMessage({ id: 'INPUT_VEHICLE_YEAR_LABEL' }),
+        //     placeholder: intl.formatMessage({ id: 'INPUT_VEHICLE_YEAR_PLACEHOLDER' }),
+        //     optionsSource: vehicleApi.getYears.bind(vehicleApi),
+        //     serializeOptionFn: (option: number) => option.toString(),
+        //     deserializeOptionFn: (option: string) => parseFloat(option),
+        // },
         {
             key: 'brand',
             label: intl.formatMessage({ id: 'INPUT_VEHICLE_BRAND_LABEL' }),
             placeholder: intl.formatMessage({ id: 'INPUT_VEHICLE_BRAND_PLACEHOLDER' }),
             optionsSource: vehicleApi.getMakes.bind(vehicleApi),
         },
-        {
-            key: 'model',
-            label: intl.formatMessage({ id: 'INPUT_VEHICLE_MODEL_LABEL' }),
-            placeholder: intl.formatMessage({ id: 'INPUT_VEHICLE_MODEL_PLACEHOLDER' }),
-            optionsSource: vehicleApi.getModels.bind(vehicleApi),
-        },
+        // {
+        //     key: 'model',
+        //     label: intl.formatMessage({ id: 'INPUT_VEHICLE_MODEL_LABEL' }),
+        //     placeholder: intl.formatMessage({ id: 'INPUT_VEHICLE_MODEL_PLACEHOLDER' }),
+        //     optionsSource: vehicleApi.getModels.bind(vehicleApi),
+        // },
         {
             key: 'engine',
             label: intl.formatMessage({ id: 'INPUT_VEHICLE_ENGINE_LABEL' }),
