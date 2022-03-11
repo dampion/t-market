@@ -4,15 +4,15 @@
 import React, { useRef } from 'react';
 // third-party
 import classNames from 'classnames';
-import { FormattedMessage } from 'react-intl';
+// import { FormattedMessage } from 'react-intl';
 // application
-import AppLink from '~/components/shared/AppLink';
+// import AppLink from '~/components/shared/AppLink';
 import MobileMenuConveyor, { IMobileMenuConveyorController } from '~/components/mobile/MobileMenuConveyor';
 // import MobileMenuIndicators from '~/components/mobile/MobileMenuIndicators';
 import MobileMenuLinks from '~/components/mobile/MobileMenuLinks';
 import MobileMenuPanel from '~/components/mobile/MobileMenuPanel';
 // import MobileMenuSettings from '~/components/mobile/MobileMenuSettings';
-import url from '~/services/url';
+// import url from '~/services/url';
 import { Cross12Svg } from '~/svg';
 import { useMobileMenu, useMobileMenuClose } from '~/store/mobile-menu/mobileMenuHooks';
 // data
@@ -57,13 +57,13 @@ function MobileMenu() {
                         <MobileMenuLinks items={dataMobileMenuLinks} />
 
                         <div className="mobile-menu__spring" />
-                        <div className="mobile-menu__divider" />
+                        {/* <div className="mobile-menu__divider" />
                         <AppLink href={url.pageContactUs()} className="mobile-menu__contacts">
                             <div className="mobile-menu__contacts-subtitle">
                                 <FormattedMessage id="TEXT_MOBILE_MENU_PHONE_TITLE" />
                             </div>
                             <div className="mobile-menu__contacts-title">800 060-0730</div>
-                        </AppLink>
+                        </AppLink> */}
                     </MobileMenuPanel>
                 </MobileMenuConveyor>
             </div>

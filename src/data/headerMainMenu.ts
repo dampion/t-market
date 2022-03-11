@@ -2,120 +2,120 @@
 import { IMainMenuLink } from '~/interfaces/main-menu-link';
 
 const dataHeaderMainMenu: IMainMenuLink[] = [
-    {
-        title: 'Products',
-        url: '/catalog/products',
-        submenu: {
-            // type: 'megamenu',
-            type: 'menu',
-            links: [
-                { title: 'Headlights', url: '/catalog/products' },
-                { title: 'Tail Lights', url: '/catalog/products' },
-                { title: 'Fog Lights', url: '/catalog/products' },
-                { title: 'Turn Signals', url: '/catalog/products' },
-                { title: 'Switches & Relays', url: '/catalog/products' },
-                { title: 'Corner Lights', url: '/catalog/products' },
-            ],
-            // size: 'nl',
-            // columns: [
-            //     {
-            //         size: 6,
-            //         links: [
-            //             {
-            //                 title: 'Headlights & Lighting',
-            //                 url: '/catalog/products',
-            //                 links: [
-            //                     { title: 'Headlights', url: '/catalog/products' },
-            //                     { title: 'Tail Lights', url: '/catalog/products' },
-            //                     { title: 'Fog Lights', url: '/catalog/products' },
-            //                     { title: 'Turn Signals', url: '/catalog/products' },
-            //                     { title: 'Switches & Relays', url: '/catalog/products' },
-            //                     { title: 'Corner Lights', url: '/catalog/products' },
-            //                 ],
-            //             },
-            //             {
-            //                 title: 'Brakes & Suspension',
-            //                 url: '/catalog/products',
-            //                 links: [
-            //                     { title: 'Brake Discs', url: '/catalog/products' },
-            //                     { title: 'Wheel Hubs', url: '/catalog/products' },
-            //                     { title: 'Air Suspension', url: '/catalog/products' },
-            //                     { title: 'Ball Joints', url: '/catalog/products' },
-            //                 ],
-            //             },
-            //         ],
-            //     },
-            //     {
-            //         size: 6,
-            //         links: [
-            //             {
-            //                 title: 'Interior Parts',
-            //                 url: '/catalog/products',
-            //                 links: [
-            //                     { title: 'Floor Mats', url: '/catalog/products' },
-            //                     { title: 'Gauges', url: '/catalog/products' },
-            //                     { title: 'Consoles & Organizers', url: '/catalog/products' },
-            //                     { title: 'Mobile Electronics', url: '/catalog/products' },
-            //                 ],
-            //             },
-            //             {
-            //                 title: 'Engine & Drivetrain',
-            //                 url: '/catalog/products',
-            //                 links: [
-            //                     { title: 'Air Filters', url: '/catalog/products' },
-            //                     { title: 'Oxygen Sensors', url: '/catalog/products' },
-            //                     { title: 'Heating', url: '/catalog/products' },
-            //                     { title: 'Exhaust', url: '/catalog/products' },
-            //                     { title: 'Cranks & Pistons', url: '/catalog/products' },
-            //                     { title: 'Cargo Accessories', url: '/catalog/products' },
-            //                 ],
-            //             },
-            //         ],
-            //     },
-            // ],
-        },
-        // customFields: {
-        //     ignoreIn: ['spaceship'],
-        // },
-    },
+    // {
+    //     title: 'Products',
+    //     url: '/catalog/products',
+    //     submenu: {
+    //         // type: 'megamenu',
+    //         type: 'menu',
+    //         links: [
+    //             { title: 'Headlights', url: '/catalog/products' },
+    //             { title: 'Tail Lights', url: '/catalog/products' },
+    //             { title: 'Fog Lights', url: '/catalog/products' },
+    //             { title: 'Turn Signals', url: '/catalog/products' },
+    //             { title: 'Switches & Relays', url: '/catalog/products' },
+    //             { title: 'Corner Lights', url: '/catalog/products' },
+    //         ],
+    //         // size: 'nl',
+    //         // columns: [
+    //         //     {
+    //         //         size: 6,
+    //         //         links: [
+    //         //             {
+    //         //                 title: 'Headlights & Lighting',
+    //         //                 url: '/catalog/products',
+    //         //                 links: [
+    //         //                     { title: 'Headlights', url: '/catalog/products' },
+    //         //                     { title: 'Tail Lights', url: '/catalog/products' },
+    //         //                     { title: 'Fog Lights', url: '/catalog/products' },
+    //         //                     { title: 'Turn Signals', url: '/catalog/products' },
+    //         //                     { title: 'Switches & Relays', url: '/catalog/products' },
+    //         //                     { title: 'Corner Lights', url: '/catalog/products' },
+    //         //                 ],
+    //         //             },
+    //         //             {
+    //         //                 title: 'Brakes & Suspension',
+    //         //                 url: '/catalog/products',
+    //         //                 links: [
+    //         //                     { title: 'Brake Discs', url: '/catalog/products' },
+    //         //                     { title: 'Wheel Hubs', url: '/catalog/products' },
+    //         //                     { title: 'Air Suspension', url: '/catalog/products' },
+    //         //                     { title: 'Ball Joints', url: '/catalog/products' },
+    //         //                 ],
+    //         //             },
+    //         //         ],
+    //         //     },
+    //         //     {
+    //         //         size: 6,
+    //         //         links: [
+    //         //             {
+    //         //                 title: 'Interior Parts',
+    //         //                 url: '/catalog/products',
+    //         //                 links: [
+    //         //                     { title: 'Floor Mats', url: '/catalog/products' },
+    //         //                     { title: 'Gauges', url: '/catalog/products' },
+    //         //                     { title: 'Consoles & Organizers', url: '/catalog/products' },
+    //         //                     { title: 'Mobile Electronics', url: '/catalog/products' },
+    //         //                 ],
+    //         //             },
+    //         //             {
+    //         //                 title: 'Engine & Drivetrain',
+    //         //                 url: '/catalog/products',
+    //         //                 links: [
+    //         //                     { title: 'Air Filters', url: '/catalog/products' },
+    //         //                     { title: 'Oxygen Sensors', url: '/catalog/products' },
+    //         //                     { title: 'Heating', url: '/catalog/products' },
+    //         //                     { title: 'Exhaust', url: '/catalog/products' },
+    //         //                     { title: 'Cranks & Pistons', url: '/catalog/products' },
+    //         //                     { title: 'Cargo Accessories', url: '/catalog/products' },
+    //         //                 ],
+    //         //             },
+    //         //         ],
+    //         //     },
+    //         // ],
+    //     },
+    //     // customFields: {
+    //     //     ignoreIn: ['spaceship'],
+    //     // },
+    // },
     {
         title: 'Home',
         url: '/',
-        submenu: {
-            type: 'menu',
-            links: [
-                { title: 'Home One', url: '/' },
-                { title: 'Home Two', url: '/demo/home-two' },
-                {
-                    title: 'Header Spaceship',
-                    url: '/demo/header-spaceship-variant-one',
-                    links: [
-                        { title: 'Variant One', url: '/demo/header-spaceship-variant-one' },
-                        { title: 'Variant Two', url: '/demo/header-spaceship-variant-two' },
-                        { title: 'Variant Three', url: '/demo/header-spaceship-variant-three' },
-                    ],
-                },
-                {
-                    title: 'Header Classic',
-                    url: '/demo/header-classic-variant-one',
-                    links: [
-                        { title: 'Variant One', url: '/demo/header-classic-variant-one' },
-                        { title: 'Variant Two', url: '/demo/header-classic-variant-two' },
-                        { title: 'Variant Three', url: '/demo/header-classic-variant-three' },
-                        { title: 'Variant Four', url: '/demo/header-classic-variant-four' },
-                        { title: 'Variant Five', url: '/demo/header-classic-variant-five' },
-                    ],
-                },
-                {
-                    title: 'Mobile Header',
-                    url: '/demo/mobile-header-variant-one',
-                    links: [
-                        { title: 'Variant One', url: '/demo/mobile-header-variant-one' },
-                        { title: 'Variant Two', url: '/demo/mobile-header-variant-two' },
-                    ],
-                },
-            ],
-        },
+        // submenu: {
+        //     type: 'menu',
+        //     links: [
+        //         { title: 'Home One', url: '/' },
+        //         { title: 'Home Two', url: '/demo/home-two' },
+        //         {
+        //             title: 'Header Spaceship',
+        //             url: '/demo/header-spaceship-variant-one',
+        //             links: [
+        //                 { title: 'Variant One', url: '/demo/header-spaceship-variant-one' },
+        //                 { title: 'Variant Two', url: '/demo/header-spaceship-variant-two' },
+        //                 { title: 'Variant Three', url: '/demo/header-spaceship-variant-three' },
+        //             ],
+        //         },
+        //         {
+        //             title: 'Header Classic',
+        //             url: '/demo/header-classic-variant-one',
+        //             links: [
+        //                 { title: 'Variant One', url: '/demo/header-classic-variant-one' },
+        //                 { title: 'Variant Two', url: '/demo/header-classic-variant-two' },
+        //                 { title: 'Variant Three', url: '/demo/header-classic-variant-three' },
+        //                 { title: 'Variant Four', url: '/demo/header-classic-variant-four' },
+        //                 { title: 'Variant Five', url: '/demo/header-classic-variant-five' },
+        //             ],
+        //         },
+        //         {
+        //             title: 'Mobile Header',
+        //             url: '/demo/mobile-header-variant-one',
+        //             links: [
+        //                 { title: 'Variant One', url: '/demo/mobile-header-variant-one' },
+        //                 { title: 'Variant Two', url: '/demo/mobile-header-variant-two' },
+        //             ],
+        //         },
+        //     ],
+        // },
     },
     // {
     //     title: 'Shop',
@@ -268,23 +268,11 @@ const dataHeaderMainMenu: IMainMenuLink[] = [
     // },
     {
         title: 'About Us',
-        url: 'https://themeforest.net/item/redparts-auto-parts-react-ecommerce-template/28404847',
-        // customFields: {
-        //     anchorProps: {
-        //         target: '_blank',
-        //     },
-        //     ignoreIn: ['spaceship'],
-        // },
+        url: '/about-us',
     },
     {
         title: 'Contact Us',
         url: '/demo/site/contact-us-v1',
-        // customFields: {
-        //     anchorProps: {
-        //         target: '_blank',
-        //     },
-        //     ignoreIn: ['spaceship'],
-        // },
     },
     // {
     //     title: 'Buy Theme',
