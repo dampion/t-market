@@ -5,7 +5,7 @@ import classNames from 'classnames';
 // application
 import AppLink from '~/components/shared/AppLink';
 import Megamenu from '~/components/header/Megamenu';
-import { ArrowRoundedDown9x6Svg, ArrowRoundedRight7x11Svg, Menu16x12Svg } from '~/svg';
+import { ArrowRoundedDown9x6Svg, ArrowRoundedRight7x11Svg } from '~/svg';
 import { IDepartmentsLink } from '~/interfaces/departments-link';
 import { useGlobalMousedown } from '~/services/hooks';
 // data
@@ -56,7 +56,8 @@ function Departments(props: Props) {
         <div className={classes} ref={rootRef}>
             <button className="departments__button" type="button" onClick={handleButtonClick}>
                 <span className="departments__button-icon">
-                    <Menu16x12Svg />
+                    {/* <Menu16x12Svg /> */}
+                    {/* {label} */}
                 </span>
                 <span className="departments__button-title">
                     {label}
