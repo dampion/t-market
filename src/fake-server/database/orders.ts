@@ -18,8 +18,17 @@ function makeOrders(defs: IOrderDef[]): IOrder[] {
         const items = def.items.map((orderItemDef) => {
             const product = products.find((x) => x.slug === orderItemDef.product);
 
-            if (!product) {
-                throw new Error('Product not found');
+            // if (!product) {
+            if (product === undefined) {
+                console.log(product, orderItemDef);
+                return {
+                    product: {},
+                    options: orderItemDef.options,
+                    price: 0,
+                    quantity: orderItemDef.quantity,
+                    total: 0,
+                };
+                // throw new Error('Product not found');
             }
 
             return {
@@ -67,7 +76,7 @@ const ordersDef: IOrderDef[] = [
         status: 'PENDING',
         items: [
             {
-                product: 'brandix-spark-plug-kit-asr-400',
+                product: 'fan-belt',
                 options: [
                     { name: 'Color', value: 'True Red' },
                     { name: 'Material', value: 'Aluminium' },
@@ -75,12 +84,12 @@ const ordersDef: IOrderDef[] = [
                 quantity: 2,
             },
             {
-                product: 'brandix-brake-kit-bdx-750z370-s',
+                product: 'timing-belt',
                 options: [],
                 quantity: 1,
             },
             {
-                product: 'left-headlight-of-brandix-z54',
+                product: 'MITSUBISHI-MB316897',
                 options: [
                     { name: 'Color', value: 'Green' },
                 ],
@@ -95,7 +104,7 @@ const ordersDef: IOrderDef[] = [
         status: 'PENDING',
         items: [
             {
-                product: 'brandix-drivers-seat',
+                product: 'MAZDA BJOP43400',
                 options: [
                     { name: 'Color', value: 'True Red' },
                     { name: 'Material', value: 'Aluminium' },
@@ -103,7 +112,7 @@ const ordersDef: IOrderDef[] = [
                 quantity: 2,
             },
             {
-                product: 'set-of-four-19-inch-spiked-tires',
+                product: 'DATSUN PLCK UP46010P08G1',
                 options: [],
                 quantity: 1,
             },
@@ -116,12 +125,12 @@ const ordersDef: IOrderDef[] = [
         status: 'SHIPPED',
         items: [
             {
-                product: 'wiper-blades-brandix-wl2',
+                product: 'ISUZU 8979406400',
                 options: [],
                 quantity: 5,
             },
             {
-                product: 'brandix-engine-block-z4',
+                product: 'TOYOTA-4720126530',
                 options: [],
                 quantity: 1,
             },
@@ -134,7 +143,7 @@ const ordersDef: IOrderDef[] = [
         status: 'COMPLETED',
         items: [
             {
-                product: 'left-headlight-of-brandix-z54',
+                product: 'MITSUBISHI-MB316897',
                 options: [],
                 quantity: 1,
             },
@@ -147,12 +156,12 @@ const ordersDef: IOrderDef[] = [
         status: 'COMPLETED',
         items: [
             {
-                product: 'taillights-brandix-z54',
+                product: 'KIA KK15043400D',
                 options: [],
                 quantity: 7,
             },
             {
-                product: 'fantastic-12-stroke-engine-with-a-power-of-1991-hp',
+                product: 'ISUZU 8973015320',
                 options: [],
                 quantity: 1,
             },
@@ -165,7 +174,7 @@ const ordersDef: IOrderDef[] = [
         status: 'COMPLETED',
         items: [
             {
-                product: 'air-filter-from-ashs-chainsaw',
+                product: 'NISSAN 4601049L01',
                 options: [],
                 quantity: 1,
             },

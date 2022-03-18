@@ -100,8 +100,8 @@
             color .2s;
 
         @include direction {
-            #{$padding-inline-start}: 35px;
-            #{$padding-inline-end}: 11px;
+            #{$padding-inline-start}: 12px;
+            #{$padding-inline-end}: 12px;
             text-align: $inline-start;
         }
 
@@ -262,12 +262,12 @@
                 height: 32px;
                 display: block;
 
-                @include direction {
-                    #{$padding-inline-end}: 0;
-                }
+                // @include direction {
+                //     #{$padding-inline-end}: 0;
+                // }
             }
             .departments__button-title {
-                display: none;
+                // display: none;
             }
         }
     }

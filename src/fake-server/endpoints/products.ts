@@ -180,9 +180,9 @@ export function addProductReview(productId: number, data: IAddProductReviewData)
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export function getProductAnalogs(productId: number): Promise<IProduct[]> {
     const slugs: string[] = [
-        'sunset-brake-kit',
-        'specter-brake-kit',
-        'brake-kit',
+        'KIA WVA20139',
+        'KIA DWBPH06',
+        'MAZDA 32198184',
     ];
     const analogs: IProduct[] = dbProducts.filter((x) => slugs.includes(x.slug));
 
