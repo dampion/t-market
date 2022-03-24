@@ -1,11 +1,11 @@
 import React, { useCallback } from 'react';
 import { ArrowRoundedDown12x7Svg } from '~/svg';
 import FilterCategory from '~/components/filters/FilterCategory';
-import FilterVehicle from '~/components/filters/FilterVehicle';
+// import FilterVehicle from '~/components/filters/FilterVehicle';
 import { getFilterValue, isDefaultFilterValue, serializeFilterValue } from '~/services/filters';
-import FilterRange from '~/components/filters/FilterRange';
-import FilterCheck from '~/components/filters/FilterCheck';
-import FilterRadio from '~/components/filters/FilterRadio';
+// import FilterRange from '~/components/filters/FilterRange';
+// import FilterCheck from '~/components/filters/FilterCheck';
+// import FilterRadio from '~/components/filters/FilterRadio';
 import FilterRating from '~/components/filters/FilterRating';
 import FilterColor from '~/components/filters/FilterColor';
 import Collapse, { ICollapseRenderFn } from '~/components/shared/Collapse';
@@ -47,37 +47,37 @@ function Filter(props: Props) {
                 <div className="filter__container">
                     {filter.type === 'category' && <FilterCategory options={filter} />}
 
-                    {filter.type === 'vehicle' && (
+                    {/* {filter.type === 'vehicle' && (
                         <FilterVehicle
                             options={filter}
                             value={getFilterValue(filter, value)}
                             onChangeValue={handleValueChange}
                         />
-                    )}
+                    )} */}
 
-                    {filter.type === 'range' && (
+                    {/* {filter.type === 'range' && (
                         <FilterRange
                             options={filter}
                             value={getFilterValue(filter, value)}
                             onChangeValue={handleValueChange}
                         />
-                    )}
+                    )} */}
 
-                    {filter.type === 'check' && (
+                    {/* {filter.type === 'check' && (
                         <FilterCheck
                             options={filter}
                             value={getFilterValue(filter, value)}
                             onChangeValue={handleValueChange}
                         />
-                    )}
+                    )} */}
 
-                    {filter.type === 'radio' && (
+                    {/* {filter.type === 'radio' && (
                         <FilterRadio
                             options={filter}
                             value={getFilterValue(filter, value)}
                             onChangeValue={handleValueChange}
                         />
-                    )}
+                    )} */}
 
                     {filter.type === 'rating' && (
                         <FilterRating

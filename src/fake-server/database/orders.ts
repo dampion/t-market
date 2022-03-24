@@ -20,7 +20,6 @@ function makeOrders(defs: IOrderDef[]): IOrder[] {
 
             // if (!product) {
             if (product === undefined) {
-                console.log(product, orderItemDef);
                 return {
                     product: {},
                     options: orderItemDef.options,
@@ -76,7 +75,7 @@ const ordersDef: IOrderDef[] = [
         status: 'PENDING',
         items: [
             {
-                product: 'fan-belt',
+                product: 'Fan Belt',
                 options: [
                     { name: 'Color', value: 'True Red' },
                     { name: 'Material', value: 'Aluminium' },
@@ -84,12 +83,12 @@ const ordersDef: IOrderDef[] = [
                 quantity: 2,
             },
             {
-                product: 'timing-belt',
+                product: 'Timing Belt',
                 options: [],
                 quantity: 1,
             },
             {
-                product: 'MITSUBISHI-MB316897',
+                product: 'MITSUBISHI MB316897',
                 options: [
                     { name: 'Color', value: 'Green' },
                 ],
@@ -130,7 +129,7 @@ const ordersDef: IOrderDef[] = [
                 quantity: 5,
             },
             {
-                product: 'TOYOTA-4720126530',
+                product: 'TOYOTA 4720126530',
                 options: [],
                 quantity: 1,
             },
@@ -143,7 +142,7 @@ const ordersDef: IOrderDef[] = [
         status: 'COMPLETED',
         items: [
             {
-                product: 'MITSUBISHI-MB316897',
+                product: 'MITSUBISHI MB316897',
                 options: [],
                 quantity: 1,
             },

@@ -67,12 +67,13 @@ function Page() {
 
     const popularCategories = useDeferredData(() => shopApi.getCategories({
         slugs: [
-            'headlights-lighting',
-            'fuel-system',
-            'body-parts',
-            'interior-parts',
-            'tires-wheels',
-            'engine-drivetrain',
+            'Belt Series',
+            'Brake Master Cylinder',
+            'Brake Pad',
+            'Brake Wheel Cylinder',
+            'Camshaft',
+            'Clutch Cover',
+            'Clutch Disc',
         ],
         depth: 1,
     }), []);

@@ -1,18 +1,18 @@
 // application
 import { AbstractFilterBuilder } from '~/fake-server/filters/abstract-filter-builder';
 import { CategoryFilterBuilder } from '~/fake-server/filters/category-filter-builder';
-import { CheckFilterBuilder } from '~/fake-server/filters/check-filter-builder';
+// import { CheckFilterBuilder } from '~/fake-server/filters/check-filter-builder';
 import { ColorFilterBuilder } from '~/fake-server/filters/color-filter-builder';
 import { getNextReviewId, reviews } from '~/fake-server/database/reviews';
 import { IProductsList, IProduct } from '~/interfaces/product';
 import { IReview } from '~/interfaces/review';
 import { prepareCategory } from '~/fake-server/endpoints/categories';
 import { products as dbProducts } from '~/fake-server/database/products';
-import { RadioFilterBuilder } from '~/fake-server/filters/radio-filter-builder';
-import { RangeFilterBuilder } from '~/fake-server/filters/range-filter-builder';
+// import { RadioFilterBuilder } from '~/fake-server/filters/radio-filter-builder';
+// import { RangeFilterBuilder } from '~/fake-server/filters/range-filter-builder';
 import { RatingFilterBuilder } from '~/fake-server/filters/rating-filter-builder';
 import { shopCategoriesList } from '~/fake-server/database/categories';
-import { VehicleFilterBuilder } from '~/fake-server/filters/vehicle-filter-builder';
+// import { VehicleFilterBuilder } from '~/fake-server/filters/vehicle-filter-builder';
 import {
     clone,
     delayResponse,
@@ -36,12 +36,55 @@ function getProducts(shift: number, categorySlug: string | null = null): IProduc
     let shiftValue = shift;
 
     switch (categorySlug) {
-    case 'tires-wheels':
-    case 'power-tools': shiftValue += 5; break;
-    case 'interior-parts':
-    case 'hand-tools': shiftValue += 10; break;
-    case 'engine-drivetrain':
-    case 'plumbing': shiftValue += 15; break;
+    case 'C.V. Joint Series':
+    case 'Cylinder Body':
+    case 'Carburetor':
+    case 'Cylinder Head':
+    case 'Complete Engine':
+    case 'Distributor':
+    case 'Distributor Cap':
+    case 'Distributor Rotor':
+    case 'Engine Bearing':
+    case 'Engine Valves ':
+    case 'Electronic Fuel Pump':
+    case 'Fan Blades Series':
+    case 'Filter Series':
+    case 'Gear Box':
+    case 'Gaskets':
+    case 'Ignition Coil':
+    case 'Lifter':
+    case 'Mechanical Fuel Pump':
+    case 'Oil Seal':
+    case 'Oil Pump':
+    case 'Piston':
+    case 'Piston Ring  ':
+        shiftValue += 5; break;
+    case 'Radiator Series':
+    case 'Regulator':
+    case 'Shock Absorber':
+    case 'Silicon-oil Fan Clutch':
+    case 'Spark Plug  ':
+    case 'Suspension':
+    case 'Switch Series':
+    case 'Tensioner':
+    case 'Timing Kit  ':
+    case 'Turbo Charger':
+    case 'Universal Joint Series':
+    case 'Water Pump':
+        shiftValue += 10; break;
+    case 'Belt Series':
+    case 'Brake Master Cylinder':
+    case 'Brake Pad':
+    case 'Brake Wheel Cylinder':
+    case 'Camshaft':
+    case 'Clutch Cover':
+    case 'Clutch Disc':
+    case 'Clutch Kit':
+    case 'Clutch Master Cylinder':
+    case 'Clutch Release Bearing':
+    case 'Clutch Slave Cylinder':
+    case 'Condenser Series':
+        shiftValue += 15; break;
     default:
     }
 
@@ -54,10 +97,10 @@ export function getProductsList(
 ): Promise<IProductsList> {
     const filters: AbstractFilterBuilder[] = [
         new CategoryFilterBuilder('category', 'Categories'),
-        new VehicleFilterBuilder('vehicle', 'Vehicle'),
-        new RangeFilterBuilder('price', 'Price'),
-        new CheckFilterBuilder('brand', 'Brand'),
-        new RadioFilterBuilder('discount', 'With Discount'),
+        // new VehicleFilterBuilder('vehicle', 'Vehicle'),
+        // new RangeFilterBuilder('price', 'Price'),
+        // new CheckFilterBuilder('brand', 'Brand'),
+        // new RadioFilterBuilder('discount', 'With Discount'),
         new RatingFilterBuilder('rating', 'Rating'),
         new ColorFilterBuilder('color', 'Color'),
     ];

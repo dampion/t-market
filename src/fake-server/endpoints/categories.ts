@@ -28,7 +28,6 @@ export function prepareCategory<T extends IBaseCategory>(category: T, depth?: nu
 
 export function getCategoryBySlug(slug: string, options?: IGetCategoryBySlugOptions): Promise<IShopCategory> {
     const optionsValue = options || {};
-
     const category = shopCategoriesList.find((x) => x.slug === slug);
 
     if (!category) {

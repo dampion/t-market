@@ -3,7 +3,7 @@ import React, { useMemo } from 'react';
 // third-party
 import { useIntl } from 'react-intl';
 // application
-import BlockBanners from '~/components/blocks/BlockBanners';
+// import BlockBanners from '~/components/blocks/BlockBanners';
 // import BlockBrands from '~/components/blocks/BlockBrands';
 // import BlockFeatures from '~/components/blocks/BlockFeatures';
 import BlockFinder from '~/components/blocks/BlockFinder';
@@ -36,22 +36,21 @@ function Page() {
     );
 
     // const blockSale = useDeferredData(() => shopApi.getSpecialOffers(8), []);
-
     const blockZones = useMemo(() => [
         {
             image: 'https://red-parts.react.themeforest.scompiler.ru/themes/red/images/categories/category-overlay-1.jpg',
             mobileImage: 'https://red-parts.react.themeforest.scompiler.ru/themes/red/images/categories/category-overlay-1-mobile.jpg',
-            categorySlug: 'tires-wheels',
+            categorySlug: 'Belt Series',
         },
         {
             image: 'https://red-parts.react.themeforest.scompiler.ru/themes/red/images/categories/category-overlay-2.jpg',
             mobileImage: 'https://red-parts.react.themeforest.scompiler.ru/themes/red/images/categories/category-overlay-2-mobile.jpg',
-            categorySlug: 'interior-parts',
+            categorySlug: 'Brake Wheel Cylinder',
         },
         {
             image: 'https://red-parts.react.themeforest.scompiler.ru/themes/red/images/categories/category-overlay-3.jpg',
             mobileImage: 'https://red-parts.react.themeforest.scompiler.ru/themes/red/images/categories/category-overlay-3-mobile.jpg',
-            categorySlug: 'engine-drivetrain',
+            categorySlug: 'Clutch Cover',
         },
     ], []);
 
@@ -126,8 +125,8 @@ function Page() {
                 </React.Fragment>
             ))}
 
-            <BlockSpace layout="divider-nl" />
-            <BlockBanners />
+            {/* <BlockSpace layout="divider-nl" /> */}
+            {/* <BlockBanners /> */}
             <BlockSpace layout="divider-nl" />
             <BlockProductsCarousel
                 blockTitle={intl.formatMessage({ id: 'HEADER_NEW_ARRIVALS' })}
