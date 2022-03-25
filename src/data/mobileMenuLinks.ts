@@ -278,14 +278,6 @@ const dataMobileMenuLinks: IMobileMenuLink[] = [
         url: '/',
     },
     {
-        title: 'About Us',
-        url: '/about-us',
-    },
-    {
-        title: 'Contact Us',
-        url: '/demo/site/contact-us-v1',
-    },
-    {
         title: 'Products',
         url: '/catalog/products',
         submenu: [
@@ -337,6 +329,14 @@ const dataMobileMenuLinks: IMobileMenuLink[] = [
             { title: 'Universal Joint Series', url: '/catalog/products' },
             { title: 'Water Pump', url: '/catalog/products' },
         ],
+    },
+    {
+        title: 'About Us',
+        url: '/about-us',
+    },
+    {
+        title: 'Contact Us',
+        url: '/demo/site/contact-us-v1',
     },
     // {
     //     title: 'Shop',

@@ -232,14 +232,6 @@ const dataHeaderMainMenu: IMainMenuLink[] = [
     //     },
     // },
     {
-        title: 'About Us',
-        url: '/about-us',
-    },
-    {
-        title: 'Contact Us',
-        url: '/demo/site/contact-us-v1',
-    },
-    {
         title: 'Products',
         url: '/catalog/products',
         submenu: {
@@ -293,6 +285,14 @@ const dataHeaderMainMenu: IMainMenuLink[] = [
                 { title: 'Water Pump', url: '/catalog/products' },
             ],
         },
+    },
+    {
+        title: 'About Us',
+        url: '/about-us',
+    },
+    {
+        title: 'Contact Us',
+        url: '/demo/site/contact-us-v1',
     },
 ];
 
