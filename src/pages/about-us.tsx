@@ -8,6 +8,7 @@ import BlockTeammates from '~/components/blocks/BlockTeammates';
 import Decor from '~/components/shared/Decor';
 import PageTitle from '~/components/shared/PageTitle';
 import { baseUrl } from '~/services/utils';
+import theme from '~/data/theme';
 
 function Page() {
     return (
@@ -31,29 +32,26 @@ function Page() {
                     <div className="about__card">
                         <div className="abobut__card-title">About Us</div>
                         <div className="about__card-text">
-                            Tranzac is an international company with 30 years of history selling spare parts for cars,
-                            trucks and motorcycles.
-                            During our work we managed to create a unique service for the sale and delivery of spare
-                            parts around the world.
+                            {theme.contacts.comment[0]}
                         </div>
-                        <div className="about__card-author">Ryan Ford, CEO Tranzac</div>
+                        <div className="about__card-author">Will Smith, CEO Tranzac</div>
                         <div className="about__card-signature">
-                            <AppImage src="/images/signature.jpg" width="160" height="55" />
+                            <AppImage src="/images/Tranzac logo_edit.svg" width="160" height="55" />
                         </div>
                     </div>
 
                     <div className="about__indicators">
                         <div className="about__indicators-body">
                             <div className="about__indicators-item">
-                                <div className="about__indicators-item-value">350</div>
+                                <div className="about__indicators-item-value">9987</div>
                                 <div className="about__indicators-item-title">Stores around the world</div>
                             </div>
                             <div className="about__indicators-item">
-                                <div className="about__indicators-item-value">80 000</div>
+                                <div className="about__indicators-item-value">89 653</div>
                                 <div className="about__indicators-item-title">Original auto parts</div>
                             </div>
                             <div className="about__indicators-item">
-                                <div className="about__indicators-item-value">5 000</div>
+                                <div className="about__indicators-item-value">115 350</div>
                                 <div className="about__indicators-item-title">Satisfied customers</div>
                             </div>
                         </div>

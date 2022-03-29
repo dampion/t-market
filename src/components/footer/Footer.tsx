@@ -28,12 +28,12 @@ export function Footer() {
                                 header={<FormattedMessage id="HEADER_INFORMATION" />}
                                 links={[
                                     { title: <FormattedMessage id="LINK_ABOUT_US" /> },
-                                    { title: <FormattedMessage id="LINK_DELIVERY_INFORMATION" /> },
+                                    // { title: <FormattedMessage id="LINK_DELIVERY_INFORMATION" /> },
                                     { title: <FormattedMessage id="LINK_PRIVACY_POLICY" /> },
-                                    { title: <FormattedMessage id="LINK_BRANDS" /> },
+                                    // { title: <FormattedMessage id="LINK_BRANDS" /> },
                                     { title: <FormattedMessage id="LINK_CONTACT_US" /> },
-                                    { title: <FormattedMessage id="LINK_RETURNS" /> },
-                                    { title: <FormattedMessage id="LINK_SITE_MAP" /> },
+                                    // { title: <FormattedMessage id="LINK_RETURNS" /> },
+                                    // { title: <FormattedMessage id="LINK_SITE_MAP" /> },
                                 ]}
                             />
                         </div>
@@ -45,10 +45,10 @@ export function Footer() {
                                     { title: <FormattedMessage id="LINK_STORE_LOCATION" /> },
                                     { title: <FormattedMessage id="LINK_ORDER_HISTORY" /> },
                                     { title: <FormattedMessage id="LINK_WISH_LIST" /> },
-                                    { title: <FormattedMessage id="LINK_NEWSLETTER" /> },
-                                    { title: <FormattedMessage id="LINK_SPECIAL_OFFERS" /> },
-                                    { title: <FormattedMessage id="LINK_GIFT_CERTIFICATES" /> },
-                                    { title: <FormattedMessage id="LINK_AFFILIATE" /> },
+                                    // { title: <FormattedMessage id="LINK_NEWSLETTER" /> },
+                                    // { title: <FormattedMessage id="LINK_SPECIAL_OFFERS" /> },
+                                    // { title: <FormattedMessage id="LINK_GIFT_CERTIFICATES" /> },
+                                    // { title: <FormattedMessage id="LINK_AFFILIATE" /> },
                                 ]}
                             />
                         </div>

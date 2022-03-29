@@ -1,15 +1,20 @@
 const theme = {
     name: 'Tranzac',
-    url: 'https://themeforest.net/item/redparts-auto-parts-react-ecommerce-template/28404847',
+    url: 'https://www.mercedes-benz.com.tw/passengercars.html?group=all&subgroup=see-all&view=BODYTYPE',
     author: {
-        name: 'Kos',
-        profile_url: 'https://themeforest.net/user/kos9',
+        name: 'Dampion',
+        profile_url: 'https://github.com/dampion',
     },
     contacts: {
-        address: ['715 Fake Street, New York 10021 USA'],
-        email: ['red-parts@example.com'],
-        phone: ['+1 (800) 060-07-30'],
+        address: ['715 Wall Street, New York 10021 USA'],
+        email: ['tranzac@gmail.com'],
+        phone: ['+886 (987) 520-666'],
         hours: ['Mon-Sat 10:00pm - 7:00pm'],
+        comment: [`Tranzac is an international company with 40 years of history selling spare parts for cars,
+            trucks and motorcycles.
+            During our work we managed to create a unique service for the sale and delivery of spare
+            parts around the world.`,
+        ],
     },
 };
 

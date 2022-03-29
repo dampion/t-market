@@ -9,6 +9,10 @@ import PageTitle from '~/components/shared/PageTitle';
 import theme from '~/data/theme';
 
 function Page() {
+    const sendInquiry = () => {
+        /* eslint no-alert: "off" */
+        alert('Your Inquiry will be sent in around 5-10 minutes.');
+    };
     return (
         <React.Fragment>
             <PageTitle>Contact Us</PageTitle>
@@ -36,11 +40,11 @@ function Page() {
 
                                         <div className="contact-us__address">
                                             <p>
-                                                715 Fake Ave, Apt. 34, New York, NY 10021 USA
+                                                {theme.contacts.address[0]}
                                                 <br />
                                                 {`Email: ${theme.contacts.email[0]}`}
                                                 <br />
-                                                Phone Number: +1 754 000-00-00
+                                                {`Phone Number: ${theme.contacts.phone[0]}`}
                                             </p>
 
                                             <p>
@@ -57,10 +61,7 @@ function Page() {
 
                                                 <strong>Comment</strong>
                                                 <br />
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                                                suscipit suscipit mi, non
-                                                tempor nulla finibus eget. Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing elit.
+                                                {theme.contacts.comment[0]}
                                             </p>
                                         </div>
                                     </div>
@@ -108,7 +109,13 @@ function Page() {
                                                     rows={4}
                                                 />
                                             </div>
-                                            <button type="submit" className="btn btn-primary">Send Message</button>
+                                            <button
+                                                type="button"
+                                                className="btn btn-primary"
+                                                onClick={sendInquiry}
+                                            >
+                                                Send Message
+                                            </button>
                                         </form>
                                     </div>
                                 </div>
