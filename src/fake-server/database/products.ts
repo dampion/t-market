@@ -29621,4 +29621,15 @@ const productsDef: IProductDef[] = [
     },
 ];
 
+// axios.get('http://localhost:3063/v1/api/getProducts', { params: { pageIndex: 1, pageSize: 10 } })
+//         .then((res) => {
+//             console.log(res.data.data);
+//             return res.data.data;
+//         })
+//         .catch((error) => {
+//             console.error(error);
+//             return [];
+//         })
+//         .finally(() => { /* 不論失敗成功皆會執行 */ });
+
 export const products: IProduct[] = makeProducts(productsDef);
