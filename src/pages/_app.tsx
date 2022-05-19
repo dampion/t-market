@@ -7,8 +7,8 @@ import { NextComponentType, NextPageContext } from 'next';
 import { useStore } from 'react-redux';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
+// import { initializeApp } from 'firebase/app';
+// import { getAnalytics } from 'firebase/analytics';
 // application
 import config from '~/config';
 import LanguageProvider, { getLanguageInitialProps, ILanguageProviderProps } from '~/services/i18n/provider';
@@ -129,19 +129,19 @@ App.getInitialProps = wrapper.getInitialAppProps((store) => async (context: AppC
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-    apiKey: 'AIzaSyAIwtG1y3zUDwwnM8tBovrTK4nvnJ5e2fg',
-    authDomain: 'tmarket-3cfa4.firebaseapp.com',
-    projectId: 'tmarket-3cfa4',
-    storageBucket: 'tmarket-3cfa4.appspot.com',
-    messagingSenderId: '454681034193',
-    appId: '1:454681034193:web:fcb6dc33f727d56a1074f0',
-    measurementId: 'G-QBLXXG7V1R',
-};
+// const firebaseConfig = {
+//     apiKey: 'AIzaSyAIwtG1y3zUDwwnM8tBovrTK4nvnJ5e2fg',
+//     authDomain: 'tmarket-3cfa4.firebaseapp.com',
+//     projectId: 'tmarket-3cfa4',
+//     storageBucket: 'tmarket-3cfa4.appspot.com',
+//     messagingSenderId: '454681034193',
+//     appId: '1:454681034193:web:fcb6dc33f727d56a1074f0',
+//     measurementId: 'G-QBLXXG7V1R',
+// };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-getAnalytics(app);
+// const app = initializeApp(firebaseConfig);
+// getAnalytics(app);
 
 const WrappedApp = wrapper.withRedux(App);
 
