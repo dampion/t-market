@@ -39,7 +39,6 @@ import Search20 from './search-20.svg';
 import Wishlist16 from './wishlist-16.svg';
 import ZoomIn24 from './zoom-in-24.svg';
 import Plus242 from './plus-damp.svg';
-// import Inquiry from './list-svgrepo-com.svg';
 
 export const ArrowDown9x6Svg = ArrowDown9x6;
 export const ArrowDownSm7x5Svg = ArrowDownSm7x5;
@@ -82,4 +81,3 @@ export const Search20Svg = Search20;
 export const Wishlist16Svg = Wishlist16;
 export const ZoomIn24Svg = ZoomIn24;
 export const Plus242Svg = Plus242;
-// export const InquirySvg = Inquiry;

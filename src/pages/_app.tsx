@@ -135,8 +135,8 @@ const firebaseConfig = {
     projectId: 'tmarket-3cfa4',
     storageBucket: 'tmarket-3cfa4.appspot.com',
     messagingSenderId: '454681034193',
-    appId: '1:454681034193:web:e123467636e0a99a1074f0',
-    measurementId: 'G-NKTB0JGB09',
+    appId: '1:454681034193:web:fcb6dc33f727d56a1074f0',
+    measurementId: 'G-QBLXXG7V1R',
 };
 
 // Initialize Firebase
