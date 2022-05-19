@@ -5,6 +5,10 @@ import AppBase, { AppContext, AppProps } from 'next/app';
 import Head from 'next/head';
 import { NextComponentType, NextPageContext } from 'next';
 import { useStore } from 'react-redux';
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+import { initializeApp } from 'firebase/app';
+import { getAnalytics } from 'firebase/analytics';
 // application
 import config from '~/config';
 import LanguageProvider, { getLanguageInitialProps, ILanguageProviderProps } from '~/services/i18n/provider';
@@ -30,6 +34,8 @@ import '../scss/style.header-classic-variant-five.scss';
 import '../scss/style.mobile-header-variant-one.scss';
 import '../scss/style.mobile-header-variant-two.scss';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+
+// Import the functions you need from the SDKs you need
 
 interface Props extends AppProps {
     languageInitialProps: ILanguageProviderProps;
@@ -120,6 +126,22 @@ App.getInitialProps = wrapper.getInitialAppProps((store) => async (context: AppC
         languageInitialProps: await getLanguageInitialProps(language),
     };
 });
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: 'AIzaSyAIwtG1y3zUDwwnM8tBovrTK4nvnJ5e2fg',
+    authDomain: 'tmarket-3cfa4.firebaseapp.com',
+    projectId: 'tmarket-3cfa4',
+    storageBucket: 'tmarket-3cfa4.appspot.com',
+    messagingSenderId: '454681034193',
+    appId: '1:454681034193:web:e123467636e0a99a1074f0',
+    measurementId: 'G-NKTB0JGB09',
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+getAnalytics(app);
 
 const WrappedApp = wrapper.withRedux(App);
 

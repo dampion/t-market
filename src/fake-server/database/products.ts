@@ -55,7 +55,7 @@ function resolveProductAttributesDef(attributesDef: IProductAttributesDef): IPro
 }
 
 function makeProducts(defs: IProductDef[]): IProduct[] {
-    return defs.map((def) => {
+    return (defs && defs.length && defs.map((def) => {
         let badges: string[] = [];
 
         if (def.badges) {
@@ -203,7 +203,7 @@ function makeProducts(defs: IProductDef[]): IProduct[] {
             categories,
             customFields: {},
         };
-    });
+    })) || [];
 }
 
 const productsDef: IProductDef[] = [
