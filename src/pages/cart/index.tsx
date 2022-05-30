@@ -87,7 +87,7 @@ function Page() {
     const sendRequest = () => {
         const data = load();
         // products params for mail api
-        const productsParams = data.cart.items.map((i) => `${i.product.partNumber},${i.product.name},${i.quantity}`).join('qqqq');
+        const productsParams = data.cart.items.map((i: any) => `${i.product.partNumber},${i.product.name},${i.quantity}`).join('qqqq');
 
         if (!name) {
             toast.error('Please fill in the name column!', { theme: 'colored', autoClose: 2000 });
@@ -119,11 +119,12 @@ function Page() {
         };
 
         axios.post('https://t-market-api.herokuapp.com/v1/api/testMail', params)
-            .then((response) => {
+            .then(() => {
                 toast.success('Inquiry will be sent in 5 minutes.', { theme: 'colored', autoClose: 2000 });
             })
             .catch((error) => { console.log(error); });
     };
+    const handleKeydown = () => {};
     if (items.length === 0) {
         return (
             <React.Fragment>
@@ -483,9 +484,9 @@ function Page() {
                 </div>
 
                 {/* <AppLink href={url.checkout()} className="btn btn-primary btn-xl btn-block"> */}
-                <div className="btn btn-primary btn-xl btn-block" onClick={sendRequest}>
+                <button type="button" className="btn btn-primary btn-xl btn-block" onClick={sendRequest} onKeyDown={handleKeydown}>
                     <FormattedMessage id="BUTTON_PROCEED_TO_CHECKOUT" />
-                </div>
+                </button>
             </div>
         </div>
     );
