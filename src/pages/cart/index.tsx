@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import { FormattedMessage, useIntl } from 'react-intl';
 // application
+import { toast } from 'react-toastify';
+import axios from 'axios';
 import AppImage from '~/components/shared/AppImage';
 import AppLink from '~/components/shared/AppLink';
 import AsyncAction from '~/components/shared/AsyncAction';
@@ -16,6 +18,7 @@ import url from '~/services/url';
 import { Cross12Svg } from '~/svg';
 import { ICartItem } from '~/store/cart/cartTypes';
 import { useCart, useCartRemoveItem, useCartUpdateQuantities } from '~/store/cart/cartHooks';
+import { load } from '~/store/store';
 
 interface Quantity {
     itemId: number;
@@ -76,6 +79,51 @@ function Page() {
         });
     };
 
+    const [name, setName] = useState('');
+    const [companyName, setCompanyName] = useState('');
+    const [website, setWebsite] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const sendRequest = () => {
+        const data = load();
+        // products params for mail api
+        const productsParams = data.cart.items.map((i) => `${i.product.partNumber},${i.product.name},${i.quantity}`).join('qqqq');
+
+        if (!name) {
+            toast.error('Please fill in the name column!', { theme: 'colored', autoClose: 2000 });
+            return;
+        }
+
+        if (!companyName) {
+            toast.error('Please fill in the company name column!', { theme: 'colored', autoClose: 2000 });
+            return;
+        }
+
+        if (!email) {
+            toast.error('Please fill in the email column!', { theme: 'colored', autoClose: 2000 });
+            return;
+        }
+
+        if (!message) {
+            toast.error('Please fill in the message column!', { theme: 'colored', autoClose: 2000 });
+            return;
+        }
+        const params = {
+            name,
+            address: companyName,
+            number: '0988123123',
+            website,
+            email,
+            message,
+            products: productsParams,
+        };
+
+        axios.post('https://t-market-api.herokuapp.com/v1/api/testMail', params)
+            .then((response) => {
+                toast.success('Inquiry will be sent in 5 minutes.', { theme: 'colored', autoClose: 2000 });
+            })
+            .catch((error) => { console.log(error); });
+    };
     if (items.length === 0) {
         return (
             <React.Fragment>
@@ -285,6 +333,8 @@ function Page() {
                                         className={classNames('form-control', {
                                             // 'is-invalid': errors?.firstName,
                                         })}
+                                        defaultValue={name}
+                                        onChange={(e) => { setName(e.target.value); }}
                                         // placeholder={intl.formatMessage({ id: 'INPUT_FIRST_NAME_PLACEHOLDER' })}
                                     // {...register(`${ns}firstName`, { required: true })}
                                     />
@@ -304,6 +354,8 @@ function Page() {
                                         className={classNames('form-control', {
                                             // 'is-invalid': errors?.firstName,
                                         })}
+                                        defaultValue={companyName}
+                                        onChange={(e) => { setCompanyName(e.target.value); }}
                                         // placeholder={intl.formatMessage({ id: 'INPUT_FIRST_COMPAMY_PLACEHOLDER' })}
                                     // {...register(`${ns}firstName`, { required: true })}
                                     />
@@ -325,6 +377,8 @@ function Page() {
                                         className={classNames('form-control', {
                                             // 'is-invalid': errors?.firstName,
                                         })}
+                                        defaultValue={website}
+                                        onChange={(e) => { setWebsite(e.target.value); }}
                                         // placeholder={intl.formatMessage({ id: 'INPUT_FIRST_WEBSITE_PLACEHOLDER' })}
                                     // {...register(`${ns}firstName`, { required: true })}
                                     />
@@ -344,6 +398,8 @@ function Page() {
                                         className={classNames('form-control', {
                                             // 'is-invalid': errors?.firstName,
                                         })}
+                                        defaultValue={email}
+                                        onChange={(e) => { setEmail(e.target.value); }}
                                         // placeholder={intl.formatMessage({ id: 'INPUT_FIRST_EMAIL_PLACEHOLDER' })}
                                     // {...register(`${ns}firstName`, { required: true })}
                                     />
@@ -365,6 +421,8 @@ function Page() {
                                         className={classNames('form-control', {
                                             // 'is-invalid': errors?.firstName,
                                         })}
+                                        defaultValue={message}
+                                        onChange={(e) => { setMessage(e.target.value); }}
                                         // placeholder={intl.formatMessage({ id: 'INPUT_FIRST_MESSAGE_PLACEHOLDER' })}
                                     // {...register(`${ns}firstName`, { required: true })}
                                     />
@@ -424,9 +482,10 @@ function Page() {
                     </tfoot> */}
                 </div>
 
-                <AppLink href={url.checkout()} className="btn btn-primary btn-xl btn-block">
+                {/* <AppLink href={url.checkout()} className="btn btn-primary btn-xl btn-block"> */}
+                <div className="btn btn-primary btn-xl btn-block" onClick={sendRequest}>
                     <FormattedMessage id="BUTTON_PROCEED_TO_CHECKOUT" />
-                </AppLink>
+                </div>
             </div>
         </div>
     );
